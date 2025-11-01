@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import About from "./About";
 import Partner from "./Partner";
-import Service from "./Service";
+import Service from "./Service/page";
 import Contact from "./Contact";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -20,14 +20,14 @@ export default function ParkingCompanyProfile() {
 
   return (
     <div className="">
-      <Header />
+   
       <Hero />
       <About/> 
       <About2/>  
-       <Product/>      
+      <Product/>      
       <Contact />
       <WA />
-      <Footer />
+
 
 
     </div>
