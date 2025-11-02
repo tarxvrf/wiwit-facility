@@ -14,11 +14,12 @@ function Product() {
       <section id="about" className="py-20 sm:py-32 lg:py-48">
         <div className="max-w-8xl sm:px-5 grid gap-12 ">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Layanan Tenaga <span className="text-amber-600">Pengamanan</span>
+            Layanan Cleaning <span className="text-amber-600">Service</span>
           </h2>
           <div>
-            Kami memiliki komitmen yang kuat dalam pelayanan dan petugas kemanan
-            kami siap ditempatkan di segala sektotr industri
+            Kami mengerti bahwa setiap organisasi bisnis membutuhkan layanan
+            yang kredibel dan bermutu tinggi guna menjamin perlindungan,
+            kebersihan, serta pemeliharaan aset mereka tetap maksimal .
           </div>
           <div className="grid grid-cols-2 mx-auto p-10 gap-10 max-w-7xl border ">
             <div className="">
@@ -31,13 +32,12 @@ function Product() {
               />
             </div>
             <div className="text-gray-600 mb-6 text-justify ">
-              <span className="font-bold">GB Facility</span> Menyiapkan system
-              keamana yang efektif dan efisian dalam melindungi asset
-              perusahaan, menjaga ketertibam dan keamanan di lingkungan kerja
-              Perusahaan kemanan kami, telah tersertifikasi dari Kepolisian
-              Republik Indonesia dan secara periodic mengikuuti dan melakukan
-              pelatihan-pelatihan agar tetap dapat senantiasa menjaga
-              stabuilitas pengamanan dan kualitas kerja
+              <span className="font-bold">GB Facility </span> 
+              menghadirkan tenaga profesional yang berpengalaman dalam pelatihan
+              yang sangat tinggi dan menawarkan jasa outsourcing cleaning
+              service profesional guna menjaga kebersihan serta kenyamanan
+              lingkungan kerja. Didukung tenaga terlatih dan metode modern untuk
+              hasil maksimal dan higienis
             </div>
           </div>
 
@@ -137,7 +137,9 @@ function Product() {
               </div>
             </div>
           </div>
-         <div className="badge badge-dash badge-success mx-auto h-16 w-32 bg-info text-white" >Success</div>
+          <div className="badge badge-dash badge-success mx-auto h-16 w-32 bg-info text-white">
+            Success
+          </div>
         </div>
       </section>
     </div>

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircle } from "react-icons/io5";
@@ -29,55 +29,69 @@ function Header() {
     <div className=" ">
       {/* Header */}
       <header
-        className={`fixed bg-amber-600 top-0 left-0 w-full z-50 ${
+        className={`fixed  top-0 left-0 w-full z-50 ${
           isScrolled
-            ? "bg-amber-500 shadow-xl rounded-b-lg ease-in-out duration-1000 "
+            ? "bg-gray-100 shadow-xl rounded-b-lg ease-in-out duration-1000 "
             : "duration-1000 ease-in-out bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <div className="text-gray-400 font-bold text-2xl">GB Facility</div>
-          <ul className="flex gap-6">
-            {navlink.map((item, index) => {
-              const isactive = pathname === item.paths;
-              return (
-                <li key={index}>
-                  <Link
-                    href={item.paths}
-                    className={`transition-colors hover:text-blue-600 ${
-                      isactive ? "text-blue-600 font-semibold" : "text-gray-700"
+        <div className=" mx-auto flex items-center gap-2 justify-between px-5 sm:px-20 sm:text-xl py-4">
+          <div className="text-gray-400 font-bold text-2xl">
+            <Image
+              width={500}
+              height={500}
+              src={"/images/bgicon.png"}
+              className="sm:w-32 w-16"
+              alt={""}
+            ></Image>
+          </div>
+          <div>
+            <ul className="flex gap-6">
+              {navlink.map((item, index) => {
+                const isactive = pathname === item.paths;
+                return (
+                  <li key={index}>
+                    <Link
+                      href={item.paths}
+                      className={`transition-colors hover:text-blue-600 ${
+                        isactive
+                          ? "text-blue-600 font-semibold"
+                          : "text-gray-700"
+                      }`}
+                    >
+                      {item.pagename}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li>
+                <div className="dropdown">
+                  <div
+                    tabIndex={0}
+                    className={`${
+                      pathname.startsWith("/Product")
+                        ? "text-blue-600 font-semibold"
+                        : "text-gray-700 hover:text-blue-600"
                     }`}
                   >
-                    {item.pagename}
-                  </Link>
-                </li>
-              );
-            })}
-            <li>
-              <div className="dropdown">
-                <div
-                  tabIndex={0}
-                  className={`${
-                    pathname.startsWith("/Product")
-                      ? "text-blue-600 font-semibold"
-                      : "text-gray-700 hover:text-blue-600"
-                  }`}
-                >
-                  Product
+                    Product
+                  </div>
+                  <ul className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                    <li>
+                      <Link href={"/Product"}>Jasa Tenaga Pengamanan</Link>
+                    </li>
+                    <li>
+                      <Link href={"/Product/Cleaning"}>Cleaning dan Gardening</Link>
+                    </li>
+                     <li>
+                      <Link href={"/Product/A"}>Labour Supply</Link>
+                    </li>
+                  </ul>
                 </div>
-                <ul className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                  <li>
-                    <Link href={"/Product"}>Product </Link>
-                  </li>
-                  <li>
-                    <Link href={"/Product/A"}>Product A</Link>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
 
-          <nav className="hidden md:flex space-x-6 text-gray-400"></nav>
           <label htmlFor="close">
             <GiHamburgerMenu className=" text-2xl mt-1 sm:hidden" />{" "}
           </label>
