@@ -14,6 +14,8 @@ function Header() {
   const navlink = [
     { paths: "/", pagename: "Home" },
     { paths: "/Service", pagename: "Service" },
+    { paths: "/Artikel", pagename: "Artikel & Berita" },
+    { paths: "/Hubungi", pagename: "Hubungi Kami" },
   ];
 
   useEffect(() => {
@@ -35,18 +37,18 @@ function Header() {
             : "duration-1000 ease-in-out bg-transparent"
         }`}
       >
-        <div className=" mx-auto flex items-center gap-2 justify-between px-5 sm:px-20 sm:text-xl py-4">
-          <div className="text-gray-400 font-bold text-2xl">
+        <div className=" mx-auto flex items-center gap-2 justify-between px-5 sm:px-20 text-xs sm:text-xl py-4">
+          <div >
             <Image
               width={500}
               height={500}
               src={"/images/bgicon.png"}
-              className="sm:w-32 w-16"
+              className="sm:w-32 w-8"
               alt={""}
             ></Image>
           </div>
           <div>
-            <ul className="flex gap-6">
+            <ul className="flex gap-2">
               {navlink.map((item, index) => {
                 const isactive = pathname === item.paths;
                 return (

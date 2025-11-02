@@ -11,17 +11,17 @@ function Product() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-32 lg:py-48">
-        <div className="max-w-8xl sm:px-5 grid gap-12 ">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Layanan Cleaning <span className="text-amber-600">Service</span>
-          </h2>
+      <section id="about" className="py-20 sm:py-32 lg:py-48 ">
+        <div className="max-w-8xl sm:px-5 grid gap-5 px-3">
           <div>
+            <h2 className="text-3xl mb-3 md:text-4xl font-bold text-gray-900 ">
+              Layanan Cleaning <span className="text-amber-600">Service</span>
+            </h2>
             Kami mengerti bahwa setiap organisasi bisnis membutuhkan layanan
             yang kredibel dan bermutu tinggi guna menjamin perlindungan,
             kebersihan, serta pemeliharaan aset mereka tetap maksimal .
           </div>
-          <div className="grid grid-cols-2 mx-auto p-10 gap-10 max-w-7xl border ">
+          <div className="grid sm:grid-cols-2 mx-auto sm:p-10 gap-10 max-w-7xl  ">
             <div className="">
               <Image
                 width={500}
@@ -32,7 +32,7 @@ function Product() {
               />
             </div>
             <div className="text-gray-600 mb-6 text-justify ">
-              <span className="font-bold">GB Facility </span> 
+              <span className="font-bold">GB Facility </span>
               menghadirkan tenaga profesional yang berpengalaman dalam pelatihan
               yang sangat tinggi dan menawarkan jasa outsourcing cleaning
               service profesional guna menjaga kebersihan serta kenyamanan
@@ -41,104 +41,75 @@ function Product() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 items-center lg:gap-10 border">
+          <div className="grid items-center lg:gap-10 gap-3">
             <div className="text-gray-600 mb-6 text-justify mx-auto">
-              <ul>
-                <li>1. Pendampingan</li>
-                <li>2. Gedung Perkantoran</li>
-                <li>3. Pusat Perbelanjaan dan Ritel</li>
-                <li>4. Ritel</li>
-                <li>5. Lembaga Keuangan</li>
-                <li>6. Lembaga Pendidikan</li>
-                <li>7. Pabrik</li>
-                <li>8. Tempat Wisata dan Tempat Hiburan</li>
-              </ul>
+              <h2 className="font-semibold">1. Jasa Kebersihan</h2>
+              Keadaan kebersihan di ruang kerja atau fasilitas umum menunjukkan
+              kualitas layanan bisnis Anda . GB Facility menawarkan solusi
+              kebersihan berkualitas tinggi, mulai dari pembersihan harian,
+              pembersihan total, hingga pemeliharaan demi menjaga kenyamanan di
+              lingkungan kerja .
             </div>
-            <div className="border">
-              <div className="grid grid-cols-2">
-                <div className="grid grid-rows-2 gap-2 p-2">
-                  <div>
-                    <Image
-                      width={500}
-                      height={500}
-                      src="/images/satpam1.jpeg"
-                      alt="Tentang GB Parking"
-                      className="rounded-2xl shadow-2xl object-cover h-32 sm:h-[250px]"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      width={500}
-                      height={500}
-                      src="/images/satpam1.jpeg"
-                      alt="Tentang GB Parking"
-                      className="rounded-2xl shadow-2xl object-cover h-32 sm:h-[250px] "
-                    />
-                  </div>
-                </div>
-                <div className="p-2">
+            <div className="">
+              <div className="grid sm:grid-cols-3 gap-3 max-w-6xl mx-auto">
+                <div>
                   <Image
                     width={500}
                     height={500}
-                    src="/images/satpam1.jpeg"
+                    src="/images/lapkaca.png"
                     alt="Tentang GB Parking"
-                    className="rounded-2xl shadow-2xl object-cover h-64 sm:h-[500px]"
+                    className="rounded-2xl shadow-2xl bg-cover bg-center w-full"
+                  />
+                </div>
+                <div>
+                  <Image
+                    width={500}
+                    height={500}
+                    src="/images/poles.png"
+                    alt="Tentang GB Parking"
+                    className="rounded-2xl shadow-2xl  bg-cover bg-center w-full"
+                  />
+                </div>
+                <div>
+                  <Image
+                    width={500}
+                    height={500}
+                    src="/images/ngepel.png"
+                    alt="Tentang GB Parking"
+                    className="rounded-2xl shadow-2xl bg-cover bg-center w-full"
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div className="p-2 grid sm:grid-cols-3 gap-3 mx-auto">
-            <Image
-              width={500}
-              height={500}
-              src="/images/satpam1.jpeg"
-              alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover "
-            />
-            <Image
-              width={500}
-              height={500}
-              src="/images/satpam1.jpeg"
-              alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover "
-            />
-            <Image
-              width={500}
-              height={500}
-              src="/images/satpam1.jpeg"
-              alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover"
-            />
+          <div className="p-2 grid mx-auto">
+            Kami juga menyediakan layanan pemeliharaan dan perawatan properti,
+            mencakup perbaikan kecil, pemeriksaan instalasi listrik dan saluran
+            air, hingga pemeliharaan bagian lainnya . Dengan bantuan teknisi
+            ahli, kami menjaga fasilitas Anda tetap prima 
           </div>
-
-          <div>
-            <h2 className="text-lg md:text-xl font-bold text-gray-900">
-              PENJAGAAN SECURITY <span className="text-amber-600">GEDUNG</span>
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-3 px-2 max-w-6xl  border">
-              <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
-                <div className="w-16 h-16  bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
-                  <FaYoutube className="text-5xl" />
-                </div>
-              </div>
-
-              <div className="grid sm:flex gap-2">
-                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
-                  <div className="w-16 h-16  bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
-                    <FaYoutube className="text-5xl" />
-                  </div>
-                </div>
-                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
-                  <div className="w-16 h-16  bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
-                    <FaYoutube className="text-5xl" />
-                  </div>
-                </div>
-              </div>
+          <div className="grid gap-3 p-2">
+            <div>
+            <ul>
+              <li>Kebersihan Harian & Umum</li>
+              <li>Pemeliharaan Taman</li>
+              <li>Pengendalian Hama</li>
+              <li>Pemeliharaan Kebersihan Gedung Tinggi</li>
+            </ul>
+            </div>
+            <div>
+              <Image
+                width={500}
+                height={500}
+                src="/images/gbcleaning.jpg"
+                alt="Tentang GB Parking"
+                className="rounded-2xl shadow-2xl bg-cover bg-center w-full"
+              />
             </div>
           </div>
+
           <div className="badge badge-dash badge-success mx-auto h-16 w-32 bg-info text-white">
-            Success
+            Kontak Kami
           </div>
         </div>
       </section>
