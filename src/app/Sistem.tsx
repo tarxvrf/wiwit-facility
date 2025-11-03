@@ -9,66 +9,43 @@ function Sistem() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="sistem" className="py-20 sm:py-24 lg:pt-28 bg-amber-600">
-
-        <div className="sm:max-w-8xl bg-amber-600 mx-auto ">
-          <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
-            <span className="text-white"> GB Parking System</span>
-          </h2>
-
-          <div className="max-w-8xl mx-auto grid lg:grid-cols-2 py-10  ">
-
-            <div className="pl-20 ">
-              <Image width={1000} height={600}
-                src="/images/about.jpg"
-                alt="Tentang GB Parking"
-                className="rounded-2xl shadow-lg w-full  object-cover"
-              />
-            </div>
-            <div className="grid mx-auto">
-              <div className="max-w-2xl grid grid-cols-2 gap-2 py-2">
-                <Image width={500} height={500}
-                  src="/images/livereport.jpg"
-                  alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-72  object-cover"
-                />
-                <Image width={500} height={500}
-                  src="/images/control.png"
-                  alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-72 object-cover"
-                />
-              </div>
-              <div className="max-w-2xl grid grid-cols-2 gap-2 py-2">
-                <Image width={500} height={500}
-                  src="/images/livereport.jpg"
-                  alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-72 object-cover"
-                />
-                <Image width={500} height={500}
-                  src="/images/handle.jpg"
-                  alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-72 object-cover"
-                />
-              </div>
-
-               <div className="max-w-2xl grid grid-cols-2 gap-2 py-2">
-                <Image width={500} height={500}
-                  src="/images/mxseris.jpg"
-                  alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-72 object-cover"
-                />
-                <Image width={500} height={500}
-                  src="/images/dispenser.jpg"
-                  alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-72 object-cover"
-                />
-              </div>
-
-            </div>
-
+      <section id="sistem" className="grid sm:px-20 px-3 md:grid-cols-2 sm:gap-3 container mx-auto py-20 sm:py-24 lg:pt-28 ">
+        <div className="card bg-base-100 w-full shadow-sm">
+          <figure>
+            <img
+              src="/images/outsourcing.jpg"
+              alt="Shoes" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">PENGELOLAAN TENAGA KERJA OUTSOURCING</h2>
+            <p>Tenaga Kerja Outsourcing adalah tenaga kerja dari pihak ketiga untuk menyelesaikan suatu pekerjaan pada perusahaan pengguna jasa.
+              Perusahaan outsourcing merupakan perusahaan yang menyediakan jasa dan menyalurkan tenaga kerja dengan keahlian tertentu ke perusahaan yang membutuhkan.
+            </p>
           </div>
+          
+        </div>
 
-
+        <div className="card bg-base-100 w-full shadow-sm">
+          <figure>
+            <img
+              src="/images/uu.png"
+              alt="Shoes" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">DASAR HUKUM UTAMA</h2>
+            <p>Undang-Undang No. 13 Th. 2003 tentang Ketenagakerjaan (UU Ketenagakerjaan) :
+              Sebelum UU Cipta Kerja, outsourcing diatur dalam Pasal 64 dan 66, yang mengizinkan penyerahan pekerjaan melalui perjanjian pemborongan atau penyediaan jasa pekerja/buruh
+            </p>
+            <p>
+              Undang-Undang No. 6 Th. 2023 tentang Penetapan Perpu Cipta Kerja Menjadi Undang-Undang :
+              UU ini mengubah dan memperbarui ketentuan mengenai outsourcing dalam UU Ketenagakerjaan, mengizinkan penyerahan sebagian pekerjaan kepada pihak lain dengan perjanjian tertulis.
+            </p>
+            <p>
+              Peraturan Pemerintah Nomor 35 Tahun 2021 tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja :
+              PP ini merupakan aturan turunan dari UU Cipta Kerja yang lebih rinci mengatur tentang alih daya, termasuk ketentuan mengenai izin usaha dan perlindungan pekerja.
+            </p>
+          </div>
+          
         </div>
       </section>
     </div>

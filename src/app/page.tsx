@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "./Hero";
 import About from "./About";
-import Partner from "./Partner";
+
 import Service from "./Service/page";
 import Contact from "./Contact";
 import Header from "./Header";
@@ -22,10 +22,10 @@ export default function ParkingCompanyProfile() {
     <div className="">
    
       <Hero />
-      <About/> 
-      <About2/>  
-      <Product/>  
-        
+      <About2/> 
+      <About/>       
+      <Product/> 
+       <Sistem/>         
       <Contact />
       <WA />
 
