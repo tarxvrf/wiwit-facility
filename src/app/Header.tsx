@@ -37,18 +37,18 @@ function Header() {
             : "duration-1000 ease-in-out bg-transparent"
         }`}
       >
-        <div className=" mx-auto flex items-center gap-2 justify-between px-5 sm:px-20 text-xs sm:text-xl py-4">
+        <div className=" mx-auto flex items-center justify-between px-5 sm:px-20 text-xs sm:text-xl py-4">
           <div >
             <Image
               width={500}
               height={500}
               src={"/images/bgicon.png"}
-              className="sm:w-32 w-8"
+              className="sm:w-16 w-8"
               alt={""}
             ></Image>
           </div>
           <div>
-            <ul className="flex gap-2">
+            <ul className="flex sm:gap-5">
               {navlink.map((item, index) => {
                 const isactive = pathname === item.paths;
                 return (

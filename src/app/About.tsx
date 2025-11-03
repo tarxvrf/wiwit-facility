@@ -19,9 +19,9 @@ function About() {
               <Image
                 width={500}
                 height={500}
-                src="/images/gbbaner.jpg"
+                src="/images/gbspanduk.jpg"
                 alt="Tentang GB Parking"
-                className="rounded-2xl shadow-2xl object-cover sm:w-96 w-64 sm:right-0"
+                className="rounded-2xl shadow-2xl object-cover w-full sm:right-0"
               />
             </div>
             <div className="text-gray-600 mb-6  sm:text-2xl text-justify ">
@@ -72,7 +72,7 @@ function About() {
                       <Image
                         width={500}
                         height={500}
-                        src="/images/gbbaner.jpg"
+                        src="/images/outsourcing.JPG"
                         alt="Tentang GB Parking"
                         className="rounded-2xl shadow-2xl object-cover sm:w-64 w-32 sm:right-0"
                       />
@@ -113,7 +113,7 @@ function About() {
                       <Image
                         width={500}
                         height={500}
-                        src="/images/gbbaner.jpg"
+                        src="/images/uu.png"
                         alt="Tentang GB Parking"
                         className="rounded-2xl shadow-2xl object-cover sm:w-64 w-32 sm:right-0"
                       />
@@ -146,8 +146,8 @@ function About() {
             </div>
             <div>
               <Image
-                src={"/images/gbbaner.jpg"}
-                className="relative w-96 bg-cover"
+                src={"/images/gbspanduk.jpg"}
+                className="relative w-full bg-cover"
                 width={500}
                 height={500}
                 alt={""}
