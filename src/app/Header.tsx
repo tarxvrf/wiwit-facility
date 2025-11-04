@@ -8,8 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircle } from "react-icons/io5";
 
 function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const routers = useRouter();
+  const [isScrolled, setIsScrolled] = useState(false);  
   const pathname = usePathname();
   const navlink = [
     { paths: "/", pagename: "Home" },

@@ -14,6 +14,13 @@ function Product() {
 
   const product = [
     {
+      id:1,
+      gbr:"satpam1.png",
+      title:"Penyediaan Tenaga Keamanan",
+      jud: "Tim Kami menyediakan Tenaga Keamanan yang terlatih trampil dan berdedikasi kepada perusahaan",
+   
+    },
+    {
       id: 2,
       gbr: "cleaner.png",
       title: "Penyediaan Tenaga Kebersihan",
@@ -22,7 +29,7 @@ function Product() {
     {
       id: 3,
       gbr: "telemarketing.png",
-      title: "Penyediaan Tenaga Kerja Pabrik, Operator",
+      title: "Penyediaan Operator Pabrik dll",
       jud: "Tim kami menyediakan tenaga kerja yang handal dan terlatih, dapat membantu Mitra lebih focus pada bisnis utamanyaa dan memungkinkan akan menjadi  lebih produktif dan mengalami  peningkatan ",
     },
   ];
@@ -30,11 +37,11 @@ function Product() {
   return (
     <section
       id="product"
-      className="flex jus sm:px-20 px-3 mx-auto pt-20 sm:pt-32 lg:pt-28 bg-gray-50"
+      className="flex justify-center sm:px-20 px-3 mx-auto pt-20 sm:pt-32 lg:pt-28 bg-gray-50"
     >
       <div className=" flex gap-3 pb-5">
         {product.map((items, index) => (
-          <div key={index} className="card w-72 bg-base-100 shadow-sm px-3">
+          <div key={index} className="card w-64 bg-base-100 shadow-sm px-3">
             <figure>
               <Image
                 width={1000}
@@ -48,7 +55,7 @@ function Product() {
               {" "}
               {items.title}{" "}
             </h2>
-            <div className="card-body text-justify p-2">
+            <div className="card-body text-left p-2">
               <h2>{items.jud}</h2>
             </div>
 
