@@ -51,7 +51,7 @@ function Hero() {
                 height={1000}
                 src="/images/cleaner.png"
                 alt="Smart Parking"
-                className="sm:w-[400px] object-cover  absolute top-64 md:top-72 sm:left-64 left-96 "
+                className="sm:w-[400px] object-cover  absolute top-64 md:top-72 sm:left-64 lg:left-96 "
               />
            
 

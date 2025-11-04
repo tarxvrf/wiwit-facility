@@ -15,21 +15,21 @@ function Product() {
   const product = [
     {
       id: 1,
-      gbr: "keamanan.png",
+      gbr: "satpam2.png",
       title: "Penyediaan Tenaga Pengamanan",
       jud: "Tim kami yang berdedikasi tinggi memiliki keahlian profesional dipadukan dengan rasa tulus dalam sikap pelayanan.Kami memahami pentingnya rasa aman, dan kami akan senantiasa memastikan setiap mitra kami menerima perhatian khusus dan dukungan yang kuat",
       fuls: "License Plate Recognition (LPR) adalah teknologi berbasis kamera + software yang bisa mendeteksi dan mengenali nomor plat kendaraan secara otomatis.Biasanya dipakai di:Sistem parkir otomatis, Tol elektronik,Manajemen akses kendaraan perumahan, kantor, bandara",
     },
     {
       id: 2,
-      gbr: "kebersihan.png",
+      gbr: "cleaner.png",
       title: "Penyediaan Tenaga Kebersihan (cleaning service)",
       jud: "Kebersihan tempat kerja harus selalu terjaga dan merupakan salah satu aspek yang harus diperhatikan oleh perusahaan.Kebersihan kantor dapat menciptakan kenyamanan kerja dan akan berpengaruh pada produktifikas kerja ",
       fuls: "GB Transaction Live Report real-time yang menampilkan data kondisi parkir secara langsung, mulai dari jumlah kendaraan yang masuk dan keluar, kapasitas terisi vs kosong, hingga transaksi pendapatan tanpa perlu rekap manual. Data diperoleh dari gate automation, kamera LPR, serta sistem pembayaran, lalu dikirim ke server dan ditampilkan dalam dashboard interaktif yang bisa diakses operator maupun manajemen. Dengan adanya live report, pengelola parkir dapat memantau operasional secara transparan, mengambil keputusan cepat, mencegah manipulasi data, dan mengakses laporan dari mana saja melalui perangkat berbasis web atau aplikasi.",
     },
     {
       id: 3,
-      gbr: "tenagakerja.png",
+      gbr: "telemarketing.png",
       title: "Penyediaan Tenaga Kerja Pabrik, Operator",
       jud: "Tim kami menyediakan tenaga kerja yang handal dan terlatih, dapat membantu Mitra lebih focus pada bisnis utamanyaa dan memungkinkan akan menjadi  lebih produktif dan mengalami  peningkatan ",
       fuls: "Control room monitoring adalah pusat kendali yang dilengkapi layar dan sistem terintegrasi untuk memantau seluruh aktivitas parkir secara real-time. Dari ruangan ini, operator dapat melihat tampilan kamera CCTV, data kendaraan masuk dan keluar melalui gate automation serta LPR (License Plate Recognition), status kapasitas parkir, hingga laporan transaksi keuangan. Sistem biasanya terhubung ke dashboard live report, sehingga setiap pergerakan kendaraan, anomali pembayaran, atau kondisi darurat (misalnya kendaraan blacklist masuk) langsung terdeteksi dan bisa ditindak cepat. Dengan control room, pengelolaan parkir menjadi lebih aman, transparan, dan efisien karena semua data terpusat di satu ruang pemantauan",
@@ -65,13 +65,13 @@ function Product() {
                 height={500}
                 src={`/images/${items.gbr}`}
                 alt="Tentang GB Parking"
-                className="rounded-2xl w-full h-64 shadow-2xl object-cover"
+                className="rounded-2xl w-full shadow-2xl object-cover "
               />
             </figure>
             <div className="card-body text-justify p-2">
               <h2 className="badge badge-secondary p-1 card-title text-xs">{items.title}</h2>
               <h2>{items.jud}</h2>
-              <div className="btn mt-2 bg-amber-600 text-white">readmore</div>
+              <div className="btn mt-2 w-1/2 bg-amber-600 rounded-3xl text-white">readmore</div>
             </div>
           </div>
         ))}
