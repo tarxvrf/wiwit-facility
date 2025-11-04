@@ -1,7 +1,13 @@
 import React from "react";
 
-import Image from "next/image"
-import { Briefcase, Users, Shield, Headphones, BrushCleaning } from "lucide-react";
+import Image from "next/image";
+import {
+  Briefcase,
+  Users,
+  Shield,
+  Headphones,
+  BrushCleaning,
+} from "lucide-react";
 
 function About() {
   const services = [
@@ -20,7 +26,6 @@ function About() {
       title: "Penyediaan Tenaga Kebersihan (cleaning service)",
       desc: "Layanan petugas cleaning service berpengalaman, menjaga lingkungan kerja tetap aman dan bersih.",
     },
-
   ];
   return (
     <section id="services" className="pt-20 sm:pt-32 lg:pt-28  bg-gray-50">
@@ -29,7 +34,9 @@ function About() {
           Layanan <span className="text-orange-600">Kami</span>
         </h2>
         <p className="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
-          <span className="text-orange-600 font-bold">GB Facility</span>  memberikan Multi-Layanan menjadikan layanan Fasilitas Terpadu dalam berbagai layanan bisnis dan industry, yang meliputi antara lain :
+          <span className="text-orange-600 font-bold">GB Facility</span>{" "}
+          memberikan Multi-Layanan menjadikan layanan Fasilitas Terpadu dalam
+          berbagai layanan bisnis dan industry, yang meliputi antara lain :
         </p>
 
         {/* Grid Layanan */}
@@ -41,20 +48,24 @@ function About() {
             >
               {service.icon}
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{service.desc}</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {service.desc}
+              </p>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-16 text-lg sm:text-xl lg:text-2xl font-medium text-gray-700">
-          <h2>Kehadiran <span className="text-orange-600 font-bold" >GB Facility</span> untuk memberikan nilai tambah, memelihara dan mengoptimalkan tempat milik mitra/pelanggan dan berkontribusi pada harapan mitra/pengguna jasa kami, agar perusahaan mitra/pengguna jasama kami dapat lebih focus dalam pengembangan bisnisnya.</h2>
+        <div className="text-center mt-16 text-md sm:text-lg lg:text-xl font-medium text-gray-700">
+          <h2>
+            Kehadiran{" "}
+            <span className="text-orange-600 font-semibold">GB Facility </span>
+            untuk memberikan nilai tambah, memelihara dan mengoptimalkan tempat
+            milik mitra/pelanggan dan berkontribusi pada harapan mitra/pengguna
+            jasa kami, agar perusahaan mitra/pengguna jasama kami dapat lebih
+            focus dalam pengembangan bisnisnya.
+          </h2>
         </div>
-
-            
-
-
       </div>
-
     </section>
   );
 }

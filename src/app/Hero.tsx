@@ -5,19 +5,11 @@ import Image from "next/image";
 
 function Hero() {
 
-  const phone = "6281234567890";
-  const message = encodeURIComponent(
-    "Halo GB Parking, saya ingin bertanya tentang layanan."
-  );
-  const href = `https://wa.me/${phone}?text=${message}`;
-
-
-
   return (
     <section className="hero bg-[url('/images/gbherobg.jpg')] min-h-screen flex items-center justify-center ">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Kiri: Teks */}
-        <div className="flex-1 text-center md:text-left">
+        <div className="flex-2 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
             <div> <Image width={500} height={500} className="sm:w-36 w-20 pb-3" src={"/images/bgicon.png"} alt={""} /></div> <span className="text-orange-600">Solusi</span> Bisnis Anda
           </h1>
@@ -35,36 +27,25 @@ function Hero() {
         </div>
 
         {/* Kanan: Gambar */}
-        <div className="flex-1 flex justify-center w-full  ">
-          <div className="space-y-4 relative w-full max-w-md md:max-w-none md:w-full">
-            <Image
-              width={1000}
-              height={1000}
-              src="/images/satpam2.png"
-              alt="Smart Parking"
-              className="sm:w-[400px] bottom-0right-0 object-cover rounded-3xl shadow-lg"
-            />
-
-            <div className="absolute top-0 left-0 w-full h-full">
+        <div className="flex-1 flex justify-center w-full relative ">
+          <div className="flex flex-col relative sm:translate-y-64 w-full max-w-md md:max-w-none md:w-full">
+                
+               <Image
+                width={1000}
+                height={1000}
+                src="/images/satpam2.png"
+                alt="Smart Parking"
+                className="sm:block hidden w-96 object-cover relative sm:-translate-y-28"
+              />  
               <Image
                 width={1000}
                 height={1000}
                 src="/images/cleaner.png"
                 alt="Smart Parking"
-                className="sm:w-[400px] object-cover  absolute top-64 md:top-72 sm:left-64 lg:left-96 "
-              />
-           
-
-            </div>
-
-
-
-
-
-
+                className="sm:block hidden w-96 object-cover absolute sm:translate-x-26 sm:translate-y-42"
+              />  
+              
           </div>
-
-
         </div>
       </div>
 
