@@ -9,7 +9,7 @@ function Hero() {
     <section className="hero bg-[url('/images/gbherobg.jpg')] min-h-screen flex items-center justify-center ">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Kiri: Teks */}
-        <div className="flex-2 text-center md:text-left">
+        <div data-aos="fade-up" data-aos-delay="0" className="flex-2 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
             <div> <Image width={500} height={500} className="sm:w-36 w-20 pb-3" src={"/images/bgicon.png"} alt={""} /></div> <span className="text-orange-600">Solusi</span> Bisnis Anda
           </h1>
@@ -27,7 +27,7 @@ function Hero() {
         </div>
 
         {/* Kanan: Gambar */}
-        <div className="flex-1 flex justify-center w-full relative ">
+        <div data-aos="fade-up" data-aos-delay="500" className="flex-1 flex justify-center w-full relative ">
           <div className="flex flex-col relative sm:translate-y-64 w-full max-w-md md:max-w-none md:w-full">
                 
                <Image

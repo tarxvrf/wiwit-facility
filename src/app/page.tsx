@@ -1,8 +1,11 @@
+"use client"
 import React from "react";
 import Hero from "./Hero";
 import About from "./About";
 
-import Service from "./Service/page";
+import 'aos/dist/aos.css'
+import AOS from 'aos'
+import { useEffect } from 'react'
 import Contact from "./Contact";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -16,7 +19,12 @@ import Product from "./Product";
 
 export default function ParkingCompanyProfile() {
 
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // durasi animasi dalam ms
+      once: true,     // animasi hanya muncul sekali
+    })
+  }, [])
 
   return (
     <div className="">

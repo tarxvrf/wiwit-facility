@@ -12,7 +12,7 @@ function About2() {
        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center lg:gap-20 gap-12">
         
         {/* Kiri: Gambar */}
-        <div className="flex-1 flex justify-center ">
+        <div data-aos="fade-right" data-aos-delay="0" className="flex-1 flex justify-center ">
           <Image
             width={1000}
             height={1000}
@@ -23,8 +23,8 @@ function About2() {
         </div>
 
         {/* Kanan: Teks */}
-        <div className="flex-1 text-center md:text-justify">
-          <h2 className="text-3xl text-left md:text-5xl font-bold text-gray-900 mb-4">
+        <div data-aos="fade-left" data-aos-delay="300" className="flex-1 text-center md:text-justify">
+          <h2 data-aos="fade-up" data-aos-delay="500" className="text-3xl text-left md:text-5xl font-bold text-gray-900 mb-4">
             Tentang <span className="text-orange-600">GB Facilty</span>
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-6">
