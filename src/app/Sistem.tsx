@@ -13,7 +13,7 @@ function Sistem() {
         <div className="card bg-base-100 w-full shadow-sm">
           <figure>
             <img
-              src="/images/outsourcing.jpg"
+              src="/images/outsourcing.JPG"
               alt="Shoes" />
           </figure>
           <div className="card-body">
