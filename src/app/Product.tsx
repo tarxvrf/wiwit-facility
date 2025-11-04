@@ -2,29 +2,24 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { FaYoutube } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 function Product() {
-  type productss = {
-    id: number;
-    gbr: string;
-    jud: string;
-    fuls: string;
-  };
-  const [idd, setid] = useState<productss[]>([]);
-
+  const router = useRouter()
   const product = [
     {
       id:1,
       gbr:"satpam1.png",
       title:"Penyediaan Tenaga Keamanan",
       jud: "Tim Kami menyediakan Tenaga Keamanan yang terlatih trampil dan berdedikasi kepada perusahaan",
-   
+      links:"/Services/Pengamanan"
     },
     {
       id: 2,
       gbr: "cleaner.png",
       title: "Penyediaan Tenaga Kebersihan",
       jud: "Kebersihan tempat kerja harus selalu terjaga dan merupakan salah satu aspek yang harus diperhatikan oleh perusahaan.Kebersihan kantor dapat menciptakan kenyamanan kerja dan akan berpengaruh pada produktifikas kerja ",
+      links:"/Services/Cleaning"
     },
     {
       id: 3,
@@ -37,11 +32,11 @@ function Product() {
   return (
     <section
       id="product"
-      className="flex justify-center sm:px-20 px-3 mx-auto pt-20 sm:pt-32 lg:pt-28 bg-gray-50"
+      className="grid sm:flex sm:justify-center sm:px-20 px-3 sm:mx-auto pt-20 sm:pt-32 lg:pt-28 bg-gray-50"
     >
-      <div className=" flex gap-3 pb-5">
+      <div className="grid sm:flex gap-3 pb-5">
         {product.map((items, index) => (
-          <div key={index} className="card w-64 bg-base-100 shadow-sm px-3">
+          <div key={index} className="card w-64 bg-base-100 shadow-sm px-3 mb-3">
             <figure>
               <Image
                 width={1000}
@@ -60,7 +55,7 @@ function Product() {
             </div>
 
             <div>
-              <div className="btn m-2 w-1/2 bg-orange-600 rounded-3xl text-white">
+              <div className="btn m-2 w-1/2 bg-orange-600 rounded-3xl text-white" onClick={()=>router.push(`${items.links}`)}>
                 readmore
               </div>
             </div>

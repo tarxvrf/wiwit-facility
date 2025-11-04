@@ -11,8 +11,7 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);  
   const pathname = usePathname();
   const navlink = [
-    { paths: "/", pagename: "Home" },
-    { paths: "/Service", pagename: "Service" },
+    { paths: "/", pagename: "Home" },   
     { paths: "/Artikel", pagename: "Artikel & Berita" },
     { paths: "/Hubungi", pagename: "Hubungi Kami" },
   ];
@@ -47,16 +46,16 @@ function Header() {
             ></Image>
           </div>
           <div>
-            <ul className="flex sm:gap-5">
+            <ul className="flex sm:gap-2">
               {navlink.map((item, index) => {
                 const isactive = pathname === item.paths;
                 return (
                   <li key={index}>
                     <Link
                       href={item.paths}
-                      className={`transition-colors hover:text-blue-600 ${
+                      className={`transition-colors hover:bg-yellow-300 rounded-2xl p-2 ${
                         isactive
-                          ? "text-blue-600 font-semibold"
+                          ? "text-orange-600 font-semibold"
                           : "text-gray-700"
                       }`}
                     >
@@ -70,22 +69,22 @@ function Header() {
                   <div
                     tabIndex={0}
                     className={`${
-                      pathname.startsWith("/Product")
-                        ? "text-blue-600 font-semibold"
-                        : "text-gray-700 hover:text-blue-600"
+                      pathname.startsWith("/Services")
+                        ? "text-orange-600 font-semibold"
+                        : "text-gray-700 hover:bg-yellow-300 rounded-2xl transition-colors "
                     }`}
                   >
-                    Product
+                    Services
                   </div>
-                  <ul className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                  <ul className="dropdown-content menu bg-orange-200 rounded-box z-1 w-52 p-2 shadow-sm">
                     <li>
-                      <Link href={"/Product"}>Jasa Tenaga Pengamanan</Link>
+                      <Link href={"/Services"}>Jasa Tenaga Pengamanan</Link>
                     </li>
                     <li>
-                      <Link href={"/Product/Cleaning"}>Cleaning dan Gardening</Link>
+                      <Link href={"/Services/Cleaning"}>Cleaning dan Gardening</Link>
                     </li>
                      <li>
-                      <Link href={"/Product/A"}>Labour Supply</Link>
+                      <Link href={"/Services/Pengamanan"}>Labour Supply</Link>
                     </li>
                   </ul>
                 </div>
