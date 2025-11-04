@@ -26,7 +26,7 @@ function Product() {
               <Image
                 width={500}
                 height={500}
-                src="/images/satpam1.jpeg"
+                src="/images/cleaner.jpg"
                 alt="Tentang GB Parking"
                 className="rounded-2xl shadow-2xl object-cover w-full "
               />

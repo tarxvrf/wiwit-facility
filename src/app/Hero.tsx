@@ -37,11 +37,11 @@ function Hero() {
         {/* Kanan: Gambar */}
         <div className="flex-1 flex justify-center">
           <Image
-            width={500}
-            height={500}            
+            width={1000}
+            height={1000}            
             src="/images/gbjob.png"
             alt="Smart Parking"
-            className="w-full max-w-6xl"
+            className="w-full h-auto"
           />
         </div>
       </div>

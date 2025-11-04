@@ -14,7 +14,7 @@ function Sistem() {
           <figure>
             <img
               src="/images/outsourcing.JPG"
-              alt="Shoes" />
+              alt="Outsourcing" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">PENGELOLAAN TENAGA KERJA OUTSOURCING</h2>

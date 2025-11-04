@@ -69,7 +69,7 @@ function Product() {
               />
             </figure>
             <div className="card-body text-justify p-2">
-              <h2 className="badge badge-secondary card-title text-sm">{items.title}</h2>
+              <h2 className="badge badge-secondary p-1 card-title text-xs">{items.title}</h2>
               <h2>{items.jud}</h2>
               <div className="btn mt-2 bg-amber-600 text-white">readmore</div>
             </div>
