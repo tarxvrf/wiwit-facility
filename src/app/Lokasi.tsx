@@ -3,7 +3,7 @@ import React from 'react'
 function Lokasi() {
   return (
     
-      <section id="location" className="py-16 bg-white ">
+      <section data-aos="fade-up" id="location" className="py-16 bg-white ">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
