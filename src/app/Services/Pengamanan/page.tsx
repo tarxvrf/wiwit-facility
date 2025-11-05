@@ -11,38 +11,45 @@ function Product() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-32 lg:py-48">
-        <div className="max-w-8xl sm:px-5 grid gap-12 ">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section id="about" className="py-20 sm:py-32 lg:py-48 px-3">
+        <div className="max-w-8xl sm:px-5 grid gap-12  pt-10 ">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
             Layanan Tenaga <span className="text-amber-600">Pengamanan</span>
           </h2>
-          <div>
-            Kami memiliki komitmen yang kuat dalam pelayanan dan petugas kemanan
-            kami siap ditempatkan di segala sektotr industri
-          </div>
-          <div className="grid sm:grid-cols-2 mx-auto sm:p-10 px-3 gap-10 max-w-7xl">
-            <div className="">
+         
+          <div className="grid sm:grid-cols-2 mx-auto sm:p-10 px-3 gap-10 max-w-7xl items-center">
+            <div className="flex-1 ">
               <Image
                 width={500}
                 height={500}
-                src="/images/satpam1.jpeg"
+                src="/images/satpam1.png"
                 alt="Tentang GB Parking"
-                className="rounded-2xl shadow-2xl object-cover w-full "
+                className="rounded-2xl shadow-2xl object-cover w-full h-90 "
               />
             </div>
-            <div className="text-gray-600 mb-6 text-justify ">
-              <span className="font-bold">GB Facility</span> Menyiapkan system
-              keamana yang efektif dan efisian dalam melindungi asset
-              perusahaan, menjaga ketertibam dan keamanan di lingkungan kerja
-              Perusahaan kemanan kami, telah tersertifikasi dari Kepolisian
-              Republik Indonesia dan secara periodic mengikuuti dan melakukan
-              pelatihan-pelatihan agar tetap dapat senantiasa menjaga
-              stabuilitas pengamanan dan kualitas kerja
+            <div className="flex flex-col gap-3 text-gray-600 text-center text-lg">
+              <div className="flex justify-center">
+                <Image
+                  src={"/images/tagname.png"}
+                  width={200}
+                  height={200}
+                  alt={""}
+                  className="w-64"
+                />
+              </div>
+              <div className="leading-relaxed ">
+                Menyiapkan system keamanan yang efektif dan efisian dalam
+                melindungi asset perusahaan, menjaga ketertibam dan keamanan di
+                lingkungan kerja Perusahaan kemanan kami, telah tersertifikasi
+                dari Kepolisian Republik Indonesia dan secara periodic
+                mengikuuti dan melakukan pelatihan-pelatihan agar tetap dapat
+                senantiasa menjaga stabuilitas pengamanan dan kualitas kerja
+              </div>
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 items-center lg:gap-10">
-            <div className="text-gray-600 mb-6 text-justify mx-auto">
+          <div className="grid sm:grid-cols-2 items-center  text-gray-600  lg:gap-10">
+            <div className=" flex-1 justify-end text-lg mb-6 text-justify mx-auto">
               <ul>
                 <li>1. Pendampingan</li>
                 <li>2. Gedung Perkantoran</li>
@@ -61,7 +68,7 @@ function Product() {
                     <Image
                       width={500}
                       height={500}
-                      src="/images/satpam1.jpeg"
+                      src="/images/satpam1.png"
                       alt="Tentang GB Parking"
                       className="rounded-2xl shadow-2xl object-cover h-32 sm:h-[250px]"
                     />
@@ -70,7 +77,7 @@ function Product() {
                     <Image
                       width={500}
                       height={500}
-                      src="/images/satpam1.jpeg"
+                      src="/images/satpam1.png"
                       alt="Tentang GB Parking"
                       className="rounded-2xl shadow-2xl object-cover h-32 sm:h-[250px] "
                     />
@@ -80,7 +87,7 @@ function Product() {
                   <Image
                     width={500}
                     height={500}
-                    src="/images/satpam1.jpeg"
+                    src="/images/satpam1.png"
                     alt="Tentang GB Parking"
                     className="rounded-2xl shadow-2xl object-cover h-64 sm:h-[500px]"
                   />
@@ -92,39 +99,51 @@ function Product() {
             <Image
               width={500}
               height={500}
-              src="/images/satpam1.jpeg"
+              src="/images/satpam1.png"
               alt="Tentang GB Parking"
               className="rounded-2xl shadow-2xl object-cover "
             />
             <Image
               width={500}
               height={500}
-              src="/images/satpam1.jpeg"
+              src="/images/satpam1.png"
               alt="Tentang GB Parking"
               className="rounded-2xl shadow-2xl object-cover "
             />
             <Image
               width={500}
               height={500}
-              src="/images/satpam1.jpeg"
+              src="/images/satpam1.png"
               alt="Tentang GB Parking"
               className="rounded-2xl shadow-2xl object-cover"
             />
           </div>
 
-          <div className="px-3">
-            <h2 className="text-lg text-center md:text-xl font-bold text-gray-900">
-              PENJAGAAN SECURITY <span className="text-amber-600">GEDUNG</span>
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-3 px-2 ">
-
-              <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
-                <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
-                  <FaYoutube className="text-5xl" />
+          <div className="grid sm:grid-cols-2 gap-3">
+            <div className="">
+              <h2 className="px-3 text-center text-lg md:text-xl font-bold text-gray-900">
+                PENJAGAAN SECURITY{" "}
+                <span className="text-orange-600">GEDUNG</span>
+              </h2>
+              <div className="grid lg:grid-cols-2 mx-auto gap-3">
+                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
+                  <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
+                    <FaYoutube className="text-5xl" />
+                  </div>
+                </div>
+                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
+                  <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
+                    <FaYoutube className="text-5xl" />
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <div className="grid sm:flex gap-2">
+            <div className="">
+              <h2 className="px-3 text-lg md:text-xl font-bold text-center text-gray-900">
+                KESELAMATAN <span className="text-orange-600">K3</span>
+              </h2>
+              <div className="grid lg:grid-cols-2 gap-3">
                 <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
                   <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
                     <FaYoutube className="text-5xl" />
@@ -138,7 +157,9 @@ function Product() {
               </div>
             </div>
           </div>
-         <div className="badge badge-dash badge-success mx-auto h-16 w-32 bg-info text-white" >Success</div>
+          <div className="badge badge-dash badge-success mx-auto h-16 w-32 bg-info text-white">
+            Success
+          </div>
         </div>
       </section>
     </div>
