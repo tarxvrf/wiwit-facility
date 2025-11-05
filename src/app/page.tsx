@@ -34,8 +34,7 @@ export default function ParkingCompanyProfile() {
       <About2/> 
       <About/>       
       <Product/> 
-       <Sistem/>   
-       <Karyawan/>  
+       <Sistem/>       
        <Lokasi/>    
       <Contact />
       <WA />
