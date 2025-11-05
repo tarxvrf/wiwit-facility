@@ -36,7 +36,7 @@ function Product() {
     >
       <div className="grid sm:flex gap-3 pb-5">
         {product.map((items, index) => (
-          <div key={index} className="card sm:w-64 bg-base-100 shadow-sm px-3 mb-3">
+          <div data-aos="fade-left" data-delay="300" key={index} className="card sm:w-64 bg-base-100 shadow-sm px-3 mb-3">
             <figure>
               <Image
                 width={1000}
@@ -46,7 +46,7 @@ function Product() {
                 className="rounded-2xl shadow-2xl object-cover "
               />
             </figure>
-            <h2 className="badge badge-secondary card-title text-xs mt-2">
+            <h2 className="badge bg-blue-100 card-title text-xs mt-2">
               {" "}
               {items.title}{" "}
             </h2>
@@ -55,7 +55,7 @@ function Product() {
             </div>
 
             <div>
-              <div className="btn m-2 w-1/2 bg-orange-600 rounded-3xl text-white" onClick={()=>router.push(`${items.links}`)}>
+              <div className="btn m-2 w-1/2 text-sm bg-orange-600 rounded-3xl text-white" onClick={()=>router.push(`${items.links}`)}>
                 readmore
               </div>
             </div>

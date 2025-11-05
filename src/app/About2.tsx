@@ -16,15 +16,15 @@ function About2() {
           <Image
             width={1000}
             height={1000}
-            src="/images/cleaner.jpg"
+            src="/images/cleaner.png"
             alt="Tentang Kami"
-            className=" w-full object-cover rounded-2xl shadow-2xl shadow-gray-400"
+            className=" w-96 object-cover rounded-2xl shadow-2xl shadow-gray-400"
           />
         </div>
 
         {/* Kanan: Teks */}
         <div data-aos="fade-left" data-aos-delay="300" className="flex-1 text-center md:text-justify">
-          <h2 data-aos="fade-up" data-aos-delay="500" className="text-3xl text-left md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 data-aos="fade-up" data-aos-delay="500" className="text-3xl text-center md:text-5xl font-bold text-gray-900 mb-4">
             Tentang <span className="text-orange-600">GB Facilty</span>
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-6">
