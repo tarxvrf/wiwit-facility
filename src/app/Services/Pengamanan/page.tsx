@@ -101,21 +101,21 @@ function Product() {
               height={500}
               src="/images/satpam1.png"
               alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover "
+              className="rounded-2xl shadow-2xl object-cover w-96 "
             />
             <Image
               width={500}
               height={500}
               src="/images/satpam1.png"
               alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover "
+              className="rounded-2xl shadow-2xl object-cover w-96 "
             />
             <Image
               width={500}
               height={500}
               src="/images/satpam1.png"
               alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover"
+              className="rounded-2xl shadow-2xl object-cover w-96"
             />
           </div>
 
