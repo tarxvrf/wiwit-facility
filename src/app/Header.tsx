@@ -76,7 +76,7 @@ function Header() {
                   >
                     Services
                   </div>
-                  <ul className="dropdown-content menu  rounded-xl z-1 b w-52 p-2 shadow-xl">
+                  <ul className="dropdown-content menu bg-gray-50 rounded-xl z-1 b w-52 p-2 shadow-xl">
                     <li className="hover:bg-orange-600 rounded-2xl hover:text-white hover:transition-colors">
                       <Link href={"/Services/Pengamanan"}>Jasa Tenaga Pengamanan</Link>
                     </li>
@@ -84,7 +84,7 @@ function Header() {
                       <Link href={"/Services/Cleaning"}>Cleaning dan Gardening</Link>
                     </li>
                      <li className="hover:bg-orange-600 rounded-2xl hover:text-white hover:transition-colors">
-                      <Link href={"/Services/Pengamanan"}>Labour Supply</Link>
+                      <Link href={"/Services/Manpower"}>ManPower</Link>
                     </li>
                   </ul>
                 </div>

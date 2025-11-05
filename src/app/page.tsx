@@ -15,6 +15,7 @@ import Lokasi from "@/Lokasi";
 import About2 from "./About2";
 import Sistem from "./Sistem";
 import Product from "./Product";
+import Karyawan from "./Karyawan";
 
 
 export default function ParkingCompanyProfile() {
@@ -33,7 +34,9 @@ export default function ParkingCompanyProfile() {
       <About2/> 
       <About/>       
       <Product/> 
-       <Sistem/>         
+       <Sistem/>   
+       <Karyawan/>  
+       <Lokasi/>    
       <Contact />
       <WA />
 
