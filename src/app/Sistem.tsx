@@ -11,7 +11,7 @@ function Sistem() {
         className="grid sm:px-20 px-3 gap-10 sm:gap-20 sm:py-24 lg:pt-28"
       >
         <div data-aos="fade-up" data-aos-delay="0" className="container mx-auto">
-          <h2 className="text-center text-2xl font-bold pb-10">
+          <h2 className="text-center text-3xl font-bold pb-10">
             PENGELOLAAN <span className="font-bold text-orange-600">TENAGA KERJA</span> OUTSOURCING
           </h2>
           <div className="grid sm:grid-cols-2 gap-12  items-center container mx-auto px-6 md:px-12  md:flex-row  lg:gap-20 ">
