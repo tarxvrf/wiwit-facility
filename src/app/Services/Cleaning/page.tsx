@@ -6,19 +6,23 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { FaYoutube } from "react-icons/fa6";
+import { FaCheckCircle } from "react-icons/fa";
 function Product() {
   return (
     <div>
       {" "}
       {/* About Section */}
       <section id="about" className="py-20 sm:py-32 lg:py-48 ">
+        <h2 className="text-3xl mb-10 md:text-4xl font-bold text-gray-900 text-center">
+          Layanan <span className="text-amber-600">Tenaga Kebersihan</span> (Cleaning Service)
+        </h2>
         <div className="max-w-8xl sm:px-5 grid gap-5 px-3">
           <div className="grid sm:grid-cols-2 mx-auto sm:p-10 gap-10 max-w-7xl items-center">
             <div className="">
               <Image
                 width={500}
                 height={500}
-                src="/images/cleaner.jpg"
+                src="/images/rakcleaning.jpg"
                 alt="Tentang GB Parking"
                 className="rounded-2xl shadow-2xl object-cover w-full "
               />
@@ -54,7 +58,7 @@ function Product() {
           <div className="grid max-w-7xl items-center mx-auto lg:gap-10 gap-3">
             <div className="text-gray-600 mb-6 text-center text-lg">
               <h2 className="font-bold text-gray-900 text-4xl text-center">
-                1. Jasa Kebersihan
+                Jasa Kebersihan
               </h2>
               Keadaan kebersihan di ruang kerja atau fasilitas umum menunjukkan
               kualitas layanan bisnis Anda . GB Facility menawarkan solusi
@@ -94,22 +98,36 @@ function Product() {
               </div>
             </div>
           </div>
-          <div className="p-2 grid mx-auto max-w-7xl text-lg">
+          <div className="m-10 p-2 grid mx-auto max-w-7xl text-lg text-center">
             Kami juga menyediakan layanan pemeliharaan dan perawatan properti,
             mencakup perbaikan kecil, pemeriksaan instalasi listrik dan saluran
             air, hingga pemeliharaan bagian lainnya . Dengan bantuan teknisi
-            ahli, kami menjaga fasilitas Anda tetap prima 
+            ahli, kami menjaga fasilitas Anda tetap prima
           </div>
-          <div className="grid gap-3 p-2 text-lg">
-            <div>
-              <ul>
-                <li>Kebersihan Harian & Umum</li>
-                <li>Pemeliharaan Taman</li>
-                <li>Pengendalian Hama</li>
-                <li>Pemeliharaan Kebersihan Gedung Tinggi</li>
-              </ul>
+          <div className="grid mx-auto gap-3 px-3 max-w-7xl text-lg m-10">
+            <div className="flex flex-col sm:flex-row gap-3">
+              <div>
+                <ul>
+                 <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>Kebersihan Harian & Umum</span></li>
+                  <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" />Pemeliharaan Taman</li>
+                  <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" />Pengendalian Hama</li>
+                  <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" />Pemeliharaan Kebersihan Gedung Tinggi</li>
+                </ul>
+              </div>
+              <div>
+                <Image
+                  width={500}
+                  height={500}
+                  src="/images/duoclean.png"
+                  alt="Tentang GB Parking"
+                  className="rounded-2xl shadow-2xl bg-cover bg-center w-full"
+                />
+              </div>
+
             </div>
-            <div className="grid mx-auto">
+            
+          </div>
+          <div className="grid mx-auto mt-10">
               <Image
                 width={500}
                 height={500}
@@ -118,11 +136,7 @@ function Product() {
                 className="rounded-2xl shadow-2xl bg-cover bg-center w-full"
               />
             </div>
-          </div>
 
-          <div className="badge badge-dash badge-success mx-auto h-16 w-32 bg-info text-white">
-            Kontak Kami
-          </div>
         </div>
       </section>
     </div>

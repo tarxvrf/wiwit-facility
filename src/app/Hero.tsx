@@ -6,7 +6,7 @@ import Image from "next/image";
 function Hero() {
 
   return (
-    <section className="bg-[url('/images/gbherobg.jpg')] min-h-svh flex items-center justify-center ">
+    <section className="bg-[url('/images/gbherobg.jpg')] min-h-screen flex items-center justify-center ">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Kiri: Teks */}
         <div data-aos="fade-up" data-aos-delay="0" className="flex-2 text-center md:text-left">
