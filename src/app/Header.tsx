@@ -65,7 +65,7 @@ function Header() {
                 );
               })}
               <li>
-                <div className="dropdown">
+                <div className="dropdown dropdown-end ">
                   <div
                     tabIndex={0}
                     className={`${
@@ -78,7 +78,7 @@ function Header() {
                   </div>
                   <ul className="dropdown-content menu bg-orange-200 rounded-box z-1 w-52 p-2 shadow-sm">
                     <li>
-                      <Link href={"/Services"}>Jasa Tenaga Pengamanan</Link>
+                      <Link href={"/Services/Pengamanan"}>Jasa Tenaga Pengamanan</Link>
                     </li>
                     <li>
                       <Link href={"/Services/Cleaning"}>Cleaning dan Gardening</Link>

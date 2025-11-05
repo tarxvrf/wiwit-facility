@@ -1,99 +1,148 @@
-"use client";
-
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
-
-function Service() {
-
- 
-
+import { FaYoutube } from "react-icons/fa6";
+function Product() {
   return (
-   <div>
-        {" "}
-        {/* About Section */}
-        <section id="about" className="py-20 sm:py-32 lg:pt-28">
-  
-  
-  
-          <div className="max-w-8xl mx-auto sm:px-20 px-2 grid gap-12 items-center">
-  
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-               Layanan Tenaga <span className="text-amber-500">Pengamanan</span>
-              </h2>
-              <div className="grid sm:grid-cols-2 sm:mx-auto sm:p-10 gap-3 sm:max-w-7xl items-center">
-                <div className="relative">
-                  <Image width={500} height={500}
-                    src="/images/logogbabout.png"
+    <div>
+      {" "}
+      {/* About Section */}
+      <section id="about" className="py-20 sm:py-32 lg:py-48">
+        <div className="max-w-8xl sm:px-5 grid gap-12 ">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Layanan Tenaga <span className="text-amber-600">Pengamanan</span>
+          </h2>
+          <div>
+            Kami memiliki komitmen yang kuat dalam pelayanan dan petugas kemanan
+            kami siap ditempatkan di segala sektotr industri
+          </div>
+          <div className="grid sm:grid-cols-2 mx-auto sm:p-10 px-3 gap-10 max-w-7xl">
+            <div className="">
+              <Image
+                width={500}
+                height={500}
+                src="/images/satpam1.jpeg"
+                alt="Tentang GB Parking"
+                className="rounded-2xl shadow-2xl object-cover w-full "
+              />
+            </div>
+            <div className="text-gray-600 mb-6 text-justify ">
+              <span className="font-bold">GB Facility</span> Menyiapkan system
+              keamana yang efektif dan efisian dalam melindungi asset
+              perusahaan, menjaga ketertibam dan keamanan di lingkungan kerja
+              Perusahaan kemanan kami, telah tersertifikasi dari Kepolisian
+              Republik Indonesia dan secara periodic mengikuuti dan melakukan
+              pelatihan-pelatihan agar tetap dapat senantiasa menjaga
+              stabuilitas pengamanan dan kualitas kerja
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 items-center lg:gap-10">
+            <div className="text-gray-600 mb-6 text-justify mx-auto">
+              <ul>
+                <li>1. Pendampingan</li>
+                <li>2. Gedung Perkantoran</li>
+                <li>3. Pusat Perbelanjaan dan Ritel</li>
+                <li>4. Ritel</li>
+                <li>5. Lembaga Keuangan</li>
+                <li>6. Lembaga Pendidikan</li>
+                <li>7. Pabrik</li>
+                <li>8. Tempat Wisata dan Tempat Hiburan</li>
+              </ul>
+            </div>
+            <div className="">
+              <div className="grid grid-cols-2">
+                <div className="grid grid-rows-2 gap-2 p-2">
+                  <div>
+                    <Image
+                      width={500}
+                      height={500}
+                      src="/images/satpam1.jpeg"
+                      alt="Tentang GB Parking"
+                      className="rounded-2xl shadow-2xl object-cover h-32 sm:h-[250px]"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      width={500}
+                      height={500}
+                      src="/images/satpam1.jpeg"
+                      alt="Tentang GB Parking"
+                      className="rounded-2xl shadow-2xl object-cover h-32 sm:h-[250px] "
+                    />
+                  </div>
+                </div>
+                <div className="p-2">
+                  <Image
+                    width={500}
+                    height={500}
+                    src="/images/satpam1.jpeg"
                     alt="Tentang GB Parking"
-                    className="rounded-2xl shadow-2xl object-cover h-64 w-64 right-0"
+                    className="rounded-2xl shadow-2xl object-cover h-64 sm:h-[500px]"
                   />
                 </div>
-                <div className="text-gray-600 mb-6 text-2xl text-justify ">
-                  <span className="font-bold">GB Facility</span> adalah perusahaan Alih Daya telah beroperasi sejak tahun 2005 dibawah naungan PT Gerbang Berkah Solusi Indonesia hingga saat ini telah mengelola ribuan karyawan di seluruh kota  besar di Indonesia
-                  GB Faclity memberikan layanan terpadu dan terintegrasi kepada perusahaan yang memerlukan layanan pengelolaan gedung/kantor dan berbagai macam bentuk layanan lainnya.
-                </div>
               </div>
-  
-              <div className="grid lg:grid-cols-2 items-center lg:gap-10">
-                <div className="text-gray-600 mb-6 text-justify">
-                  <span className="font-bold">GB Facility</span> memberikan Multi-Layanan menjadikan layanan Fasilitas Terpadu dalam berbagai layanan bisnis dan industry, yang melupitu antara lain :
-                  <ul>
-                    <li>
-                      1.	Layanan Penyediaan Tenaga Pengamanan
-                    </li>
-                    <li>
-                      2.	Layanan Penyediaan Tenaga Kerja Pabrik, Operator, dll
-                    </li>
-                    <li>
-                      3.	Layanan Penyediaan Tenaga Kebersihan (cleaning service) dan Office Boy
-                    </li>
-                  </ul>
-  
-                  <p className="text-gray-600 mb-6 text-justify">
-                    Kehadiran GB Facility untuk memberikan nilai tambah, memelihara dan mengoptimalkan tempat milik mitra/pelanggan dan berkontribusi pada harapan mitra/pengguna jasa kami, agar perusahaan mitra/pengguna jasama kami dapat lebih focus dalam pengembangan bisnisnya.
-                  </p>
-  
-                  <div className="text-gray-600 mb-6 text-justify">
-                    <h1 className="font-bold">PENGELOLAAN TENAGA KERJA OUTSOURCING</h1>
-  
-                    Tenaga Kerja Outsourcing adalah tenaga kerja dari pihak ketiga untuk menyelesaikan suatu pekerjaan pada perusahaan pengguna jasa.
-                    Perusahaan outsourcing merupakan perusahaan yang menyediakan jasa dan menyalurkan tenaga kerja dengan keahlian tertentu ke perusahaan yang membutuhkan.
-                  </div>
-                  <div className="text-gray-600 mb-6 text-justify">
-                    <h1 className="font-bold">Dasar Hukum Utama</h1>
-                    <span className="font-bold">Undang-Undang No. 13 Th. 2003 tentang Ketenagakerjaan (UU Ketenagakerjaan) :</span>
-                    Sebelum UU Cipta Kerja, outsourcing diatur dalam Pasal 64 dan 66, yang mengizinkan penyerahan pekerjaan melalui perjanjian pemborongan atau penyediaan jasa pekerja/buruh
-                  </div>
-  
-                  <div className="text-gray-600 mb-6 text-justify">
-                    <span className="font-bold">Undang-Undang No. 6 Th. 2023 tentang Penetapan Perpu Cipta Kerja Menjadi Undang-Undang :</span>
-                    UU ini mengubah dan memperbarui ketentuan mengenai outsourcing dalam UU Ketenagakerjaan, mengizinkan penyerahan sebagian pekerjaan kepada pihak lain dengan perjanjian tertulis.
-                  </div>
-  
-                  <div className="text-gray-600 mb-6 text-justify">
-                    <span>Peraturan Pemerintah Nomor 35 Tahun 2021</span> tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja :
-                    PP ini merupakan aturan turunan dari UU Cipta Kerja yang lebih rinci mengatur tentang alih daya, termasuk ketentuan mengenai izin usaha dan perlindungan pekerja.
-                  </div>
-                </div>
-                <div>
-                  <Image src={"/images/aboutgbrpekerja.png"} className="relative w-full bg-cover" width={500} height={500} alt={""} >
-                  </Image>
-                </div>
-  
-              </div>
-  
             </div>
-  
           </div>
-        </section>
-      </div>
+          <div className="p-2 grid sm:grid-cols-3 gap-3 mx-auto">
+            <Image
+              width={500}
+              height={500}
+              src="/images/satpam1.jpeg"
+              alt="Tentang GB Parking"
+              className="rounded-2xl shadow-2xl object-cover "
+            />
+            <Image
+              width={500}
+              height={500}
+              src="/images/satpam1.jpeg"
+              alt="Tentang GB Parking"
+              className="rounded-2xl shadow-2xl object-cover "
+            />
+            <Image
+              width={500}
+              height={500}
+              src="/images/satpam1.jpeg"
+              alt="Tentang GB Parking"
+              className="rounded-2xl shadow-2xl object-cover"
+            />
+          </div>
+
+          <div className="px-3">
+            <h2 className="text-lg text-center md:text-xl font-bold text-gray-900">
+              PENJAGAAN SECURITY <span className="text-amber-600">GEDUNG</span>
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-3 px-2 ">
+
+              <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
+                <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
+                  <FaYoutube className="text-5xl" />
+                </div>
+              </div>
+
+              <div className="grid sm:flex gap-2">
+                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
+                  <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
+                    <FaYoutube className="text-5xl" />
+                  </div>
+                </div>
+                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
+                  <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
+                    <FaYoutube className="text-5xl" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div className="badge badge-dash badge-success mx-auto h-16 w-32 bg-info text-white" >Success</div>
+        </div>
+      </section>
+    </div>
   );
 }
 
-export default Service;
+export default Product;

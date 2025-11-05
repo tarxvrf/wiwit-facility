@@ -36,7 +36,7 @@ function Product() {
     >
       <div className="grid sm:flex gap-3 pb-5">
         {product.map((items, index) => (
-          <div key={index} className="card w-64 bg-base-100 shadow-sm px-3 mb-3">
+          <div key={index} className="card sm:w-64 bg-base-100 shadow-sm px-3 mb-3">
             <figure>
               <Image
                 width={1000}
