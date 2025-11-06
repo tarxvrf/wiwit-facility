@@ -158,7 +158,9 @@ function Product() {
               <div className="grid lg:grid-cols-2 gap-3">
                 <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
                   <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
-                    <FaYoutube className="text-5xl" />
+                    <div >
+                            <iframe width="500" height="400" src="https://youtube.com/embed/TGaSI2qr02Q?si=pVQUa2eBJmvYEC0p" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
                   </div>
                 </div>
                 <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">

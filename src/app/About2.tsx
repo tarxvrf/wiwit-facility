@@ -16,7 +16,7 @@ function About2() {
           <Image
             width={1000}
             height={1000}
-            src="/images/gbabout.jpg"
+            src="/images/logoberanda.png"
             alt="Tentang Kami"
             className=" w-[400px] object-cover rounded-2xl shadow-2xl shadow-gray-400"
           />
