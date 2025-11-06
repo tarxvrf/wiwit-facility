@@ -9,7 +9,7 @@ function Product() {
   const product = [
     {
       id:1,
-      gbr:"satpam1.png",
+      gbr:"satpamai3.png",
       title:"Penyediaan Tenaga Keamanan",
       jud: "Tim Kami menyediakan Tenaga Keamanan yang terlatih trampil dan berdedikasi kepada perusahaan",
       links:"/Services/Pengamanan"
