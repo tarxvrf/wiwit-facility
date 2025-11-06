@@ -30,10 +30,11 @@ export default function ParkingCompanyProfile() {
     <div className="">
    
       <Hero />
-      <About2/> 
+      <About2/>
+      <Sistem/> 
       <About/>       
       <Product/> 
-       <Sistem/>       
+              
        <Lokasi/>    
       <Contact />
       <WA />

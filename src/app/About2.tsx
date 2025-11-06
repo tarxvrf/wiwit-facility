@@ -8,7 +8,7 @@ function About2() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about2" className="pt-20 sm:pt-32 lg:pt-28 bg-gray-50 ">
+      <section id="about2" className="pt-20 sm:pt-32 lg:pt-28 bg-gray-50 pb-20">
        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center lg:gap-20 gap-12">
         
         {/* Kiri: Gambar */}
@@ -16,9 +16,9 @@ function About2() {
           <Image
             width={1000}
             height={1000}
-            src="/images/cleaner.png"
+            src="/images/gbabout.jpg"
             alt="Tentang Kami"
-            className=" w-96 object-cover rounded-2xl shadow-2xl shadow-gray-400"
+            className=" w-[400px] object-cover rounded-2xl shadow-2xl shadow-gray-400"
           />
         </div>
 
@@ -27,7 +27,7 @@ function About2() {
           <h2 data-aos="fade-up" data-aos-delay="500" className="text-3xl text-center md:text-5xl font-bold text-gray-900 mb-4">
             Tentang <span className="text-orange-600">GB Facilty</span>
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed mb-6">
+          <p className="text-gray-600 text-xl leading-relaxed mb-6">
            <span className="font-bold">GB Facility</span> adalah perusahaan
               Alih Daya telah beroperasi sejak tahun 2005 dibawah naungan PT
               Gerbang Berkah Solusi Indonesia hingga saat ini telah mengelola

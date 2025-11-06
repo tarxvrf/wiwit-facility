@@ -3,7 +3,7 @@
 export default function FloatingWA() {
  
 
-  const phone = "6281234567890";
+  const phone = "6281314367878";
   const message = encodeURIComponent(
     "Halo GB Parking, saya ingin bertanya tentang layanan."
   );

@@ -18,7 +18,7 @@ function Product() {
             height={2000}
             src="/images/homesatpam.jpg"
             alt="Tentang GB Parking"
-            className="rounded-2xl shadow-2xl object-cover w-full"
+            className="rounded-2xl shadow-2xl object-cover w-full hidden sm:block"
           />
         </div>
         <div className="max-w-8xl sm:px-5 grid gap-12  pt-10 ">
@@ -112,21 +112,22 @@ function Product() {
               height={500}
               src="/images/satpamproyek.jpeg"
               alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover w-96 "
+              className="rounded-2xl shadow-2xl object-cover w-96 h-96 "
+            />
+            
+            <Image
+              width={500}
+              height={500}
+              src="/images/satpamai14.png"
+              alt="Tentang GB Parking"
+              className="rounded-2xl shadow-2xl object-cover w-96 h-96"
             />
             <Image
               width={500}
               height={500}
               src="/images/guardai.png"
               alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover w-96 "
-            />
-            <Image
-              width={500}
-              height={500}
-              src="/images/satpam1.png"
-              alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover w-96"
+              className="rounded-2xl shadow-2xl object-cover w-96 h-96"
             />
           </div>
 

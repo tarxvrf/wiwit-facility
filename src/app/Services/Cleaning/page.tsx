@@ -22,7 +22,7 @@ function Product() {
               <Image
                 width={500}
                 height={500}
-                src="/images/rakcleaning.jpg"
+                src="/images/rakcleaning.png"
                 alt="Tentang GB Parking"
                 className="rounded-2xl shadow-2xl object-cover w-full "
               />
@@ -37,14 +37,14 @@ function Product() {
                   className="w-60"
                 />
               </div>
-              <div className="flex flex-col gap-3">
-                <p>
+              <div className="flex flex-col gap-3 text-xl ">
+                <p className="">
                   Kami mengerti bahwa setiap organisasi bisnis membutuhkan
                   layanan yang kredibel dan bermutu tinggi guna menjamin
                   perlindungan, kebersihan, serta pemeliharaan aset mereka tetap
                   maksimal .
                 </p>
-                <p>
+                <p className="">
                   menghadirkan tenaga profesional yang berpengalaman dalam
                   pelatihan yang sangat tinggi dan menawarkan jasa outsourcing
                   cleaning service profesional guna menjaga kebersihan serta
@@ -55,9 +55,9 @@ function Product() {
             </div>
           </div>
 
-          <div className="grid max-w-7xl items-center mx-auto lg:gap-10 gap-3">
-            <div className="text-gray-600 mb-6 text-center text-lg">
-              <h2 className="font-bold text-gray-900 text-4xl text-center">
+          <div className="grid max-w-6xl items-center mx-auto lg:gap-10 gap-3">
+            <div className="text-gray-600 mb-6 text-center text-xl">
+              <h2 className="font-bold text-gray-900 text-4xl text-center pb-5">
                 Jasa Kebersihan
               </h2>
               Keadaan kebersihan di ruang kerja atau fasilitas umum menunjukkan
@@ -74,7 +74,7 @@ function Product() {
                     height={500}
                     src="/images/lapkaca.png"
                     alt="Tentang GB Parking"
-                    className="rounded-2xl shadow-2xl bg-cover bg-center w-full"
+                    className="rounded-2xl shadow-2xl bg-cover bg-center w-96 h-96"
                   />
                 </div>
                 <div>
@@ -83,7 +83,7 @@ function Product() {
                     height={500}
                     src="/images/poles.png"
                     alt="Tentang GB Parking"
-                    className="rounded-2xl shadow-2xl  bg-cover bg-center w-full"
+                    className="rounded-2xl shadow-2xl  bg-cover bg-center w-96-h-96"
                   />
                 </div>
                 <div>
@@ -92,21 +92,21 @@ function Product() {
                     height={500}
                     src="/images/ngepel.png"
                     alt="Tentang GB Parking"
-                    className="rounded-2xl shadow-2xl bg-cover bg-center w-full"
+                    className="rounded-2xl shadow-2xl bg-cover bg-center w-96 h-96"
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div className="m-10 p-2 grid mx-auto max-w-7xl text-lg text-center">
+          <div className="m-10 p-2 grid mx-auto max-w-5xl text-xl text-center">
             Kami juga menyediakan layanan pemeliharaan dan perawatan properti,
             mencakup perbaikan kecil, pemeriksaan instalasi listrik dan saluran
             air, hingga pemeliharaan bagian lainnya . Dengan bantuan teknisi
             ahli, kami menjaga fasilitas Anda tetap prima
           </div>
-          <div className="grid mx-auto gap-3 px-3 max-w-7xl text-lg m-10">
-            <div className="flex flex-col sm:flex-row gap-3">
-              <div>
+          <div className="grid mx-auto gap-3 px-3 max-w-8xl text-xl mb-10">
+            <div className="flex sm:flex-col gap-3 px-3">
+              <div className="flex justify-center pb-5 ">
                 <ul>
                  <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>Kebersihan Harian & Umum</span></li>
                   <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" />Pemeliharaan Taman</li>
@@ -114,13 +114,34 @@ function Product() {
                   <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" />Pemeliharaan Kebersihan Gedung Tinggi</li>
                 </ul>
               </div>
-              <div>
+              <div className="grid sm:grid-cols-4 gap-3">
                 <Image
                   width={500}
                   height={500}
-                  src="/images/duoclean.png"
+                  src="/images/lapkaca.png"
                   alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-2xl bg-cover bg-center w-full"
+                  className="rounded-2xl shadow-2xl bg-cover bg-center w-96 h-96"
+                />
+                <Image
+                  width={500}
+                  height={500}
+                  src="/images/poles.png"
+                  alt="Tentang GB Parking"
+                  className="rounded-2xl shadow-2xl bg-cover bg-center w-96 h-96"
+                />
+                <Image
+                  width={500}
+                  height={500}
+                  src="/images/gardener.png"
+                  alt="Tentang GB Parking"
+                  className="rounded-2xl shadow-2xl bg-cover bg-center w-96 h-96"
+                />
+                 <Image
+                  width={500}
+                  height={500}
+                  src="/images/gardener.png"
+                  alt="Tentang GB Parking"
+                  className="rounded-2xl shadow-2xl bg-cover bg-center w-96 h-96"
                 />
               </div>
 
