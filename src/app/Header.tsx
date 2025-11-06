@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname,useRouter } from "next/navigation";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -15,7 +15,7 @@ function Header() {
     { paths: "/Artikel", pagename: "Artikel & Berita" },
     { paths: "/Hubungi", pagename: "Hubungi Kami" },
   ];
-
+  const router = useRouter();
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50); // kalau scroll > 50px, ubah bg
@@ -36,13 +36,14 @@ function Header() {
         }`}
       >
         <div className=" mx-auto flex items-center justify-between px-5 sm:px-20 text-xs sm:text-xl py-4">
-          <div >
+          <div className="cursor-pointer">
             <Image
               width={500}
               height={500}
               src={"/images/bgicon.png"}
               className="sm:w-16 w-8"
               alt={""}
+              onClick={()=>router.push("/")}
             ></Image>
           </div>
           <div>
