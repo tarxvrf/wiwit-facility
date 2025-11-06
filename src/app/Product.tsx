@@ -1,7 +1,7 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React from "react";
 import Image from "next/image";
-import { FaYoutube } from "react-icons/fa";
+
 import { useRouter } from "next/navigation";
 
 function Product() {

@@ -1,11 +1,10 @@
 import React from "react";
 
-import Image from "next/image";
 import {
   Briefcase,
-  Users,
+
   Shield,
-  Headphones,
+
   BrushCleaning,
 } from "lucide-react";
 

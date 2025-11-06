@@ -7,15 +7,14 @@ import 'aos/dist/aos.css'
 import AOS from 'aos'
 import { useEffect } from 'react'
 import Contact from "./Contact";
-import Header from "./Header";
-import Footer from "./Footer";
+
 import WA from "./WA";
 import Lokasi from "@/Lokasi";
 
 import About2 from "./About2";
 import Sistem from "./Sistem";
 import Product from "./Product";
-import Karyawan from "./Karyawan";
+
 
 
 export default function ParkingCompanyProfile() {

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
+
 import "swiper/css";
-import { Navigation, Pagination } from "swiper/modules";
+
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
-import { FaYoutube } from "react-icons/fa6";
+
 import { FaCheckCircle } from "react-icons/fa";
 function Product() {
   return (
