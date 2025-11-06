@@ -11,7 +11,16 @@ function Product() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-32 lg:py-48 px-3">
+      <section id="about" className="py-10 sm:py-20 lg:py-20 px-3">
+         <div className="flex justify-center">
+                  <Image
+                    width={2000}
+                    height={2000}
+                    src="/images/homesatpam.jpg"
+                    alt="Tentang GB Parking"
+                    className="rounded-2xl shadow-2xl object-cover w-full"
+                  />
+                </div>
         <div className="max-w-8xl sm:px-5 grid gap-12  pt-10 ">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
             Layanan Tenaga <span className="text-amber-600">Pengamanan</span>
@@ -68,7 +77,7 @@ function Product() {
                     <Image
                       width={500}
                       height={500}
-                      src="/images/satpam1.png"
+                      src="/images/guardai.png"
                       alt="Tentang GB Parking"
                       className="rounded-2xl shadow-2xl object-cover h-32 sm:h-[250px]"
                     />
@@ -77,7 +86,7 @@ function Product() {
                     <Image
                       width={500}
                       height={500}
-                      src="/images/satpam1.png"
+                      src="/images/briefsatpam.jpeg"
                       alt="Tentang GB Parking"
                       className="rounded-2xl shadow-2xl object-cover h-32 sm:h-[250px] "
                     />
@@ -87,7 +96,7 @@ function Product() {
                   <Image
                     width={500}
                     height={500}
-                    src="/images/satpam1.png"
+                    src="/images/satpamai.png"
                     alt="Tentang GB Parking"
                     className="rounded-2xl shadow-2xl object-cover h-64 sm:h-[500px]"
                   />
@@ -99,14 +108,14 @@ function Product() {
             <Image
               width={500}
               height={500}
-              src="/images/satpam1.png"
+              src="/images/satpamproyek.jpeg"
               alt="Tentang GB Parking"
               className="rounded-2xl shadow-2xl object-cover w-96 "
             />
             <Image
               width={500}
               height={500}
-              src="/images/satpam1.png"
+              src="/images/guardai.png"
               alt="Tentang GB Parking"
               className="rounded-2xl shadow-2xl object-cover w-96 "
             />
