@@ -6,34 +6,35 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { FaYoutube } from "react-icons/fa6";
+import { FaCheckCircle } from "react-icons/fa";
 function Product() {
   return (
     <div>
       {" "}
       {/* About Section */}
       <section id="about" className="py-10 sm:py-20 lg:py-20 px-3">
-         <div className="flex justify-center">
-                  <Image
-                    width={2000}
-                    height={2000}
-                    src="/images/homesatpam.jpg"
-                    alt="Tentang GB Parking"
-                    className="rounded-2xl shadow-2xl object-cover w-full"
-                  />
-                </div>
+        <div className="flex justify-center">
+          <Image
+            width={2000}
+            height={2000}
+            src="/images/homesatpam.jpg"
+            alt="Tentang GB Parking"
+            className="rounded-2xl shadow-2xl object-cover w-full"
+          />
+        </div>
         <div className="max-w-8xl sm:px-5 grid gap-12  pt-10 ">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
             Layanan Tenaga <span className="text-amber-600">Pengamanan</span>
           </h2>
-         
+
           <div className="grid sm:grid-cols-2 mx-auto sm:p-10 px-3 gap-10 max-w-7xl items-center">
             <div className="flex-1 ">
               <Image
-                width={500}
-                height={500}
-                src="/images/satpam1.png"
+                width={1000}
+                height={1000}
+                src="/images/homesatpam.jpg"
                 alt="Tentang GB Parking"
-                className="rounded-2xl shadow-2xl object-cover w-full h-90 "
+                className="rounded-2xl shadow-2xl object-cover w-full"
               />
             </div>
             <div className="flex flex-col gap-3 text-gray-600 text-center text-lg">
@@ -59,16 +60,18 @@ function Product() {
 
           <div className="grid sm:grid-cols-2 items-center  text-gray-600  lg:gap-10">
             <div className=" flex-1 justify-end text-lg mb-6 text-justify mx-auto">
+
               <ul>
-                <li>1. Pendampingan</li>
-                <li>2. Gedung Perkantoran</li>
-                <li>3. Pusat Perbelanjaan dan Ritel</li>
-                <li>4. Ritel</li>
-                <li>5. Lembaga Keuangan</li>
-                <li>6. Lembaga Pendidikan</li>
-                <li>7. Pabrik</li>
-                <li>8. Tempat Wisata dan Tempat Hiburan</li>
+                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>1. Pendampingan</span></li>
+                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>2. Gedung Perkantoran</span></li>
+                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>3. Pusat Perbelanjaan dan Ritel</span></li>
+                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>4. Ritel</span></li>
+                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>5. Lembaga Keuangan</span></li>
+                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>6. Lembaga Pendidikan</span></li>
+                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>7. Pabrik</span></li>
+                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>8. Tempat Wisata dan Tempat Hiburan</span></li>
               </ul>
+
             </div>
             <div className="">
               <div className="grid grid-cols-2">
@@ -165,9 +168,6 @@ function Product() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="badge badge-dash badge-success mx-auto h-16 w-32 bg-info text-white">
-            Success
           </div>
         </div>
       </section>
