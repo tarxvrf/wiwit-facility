@@ -10,11 +10,7 @@ import { IoCloseCircle } from "react-icons/io5";
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-  const navlink = [
-   
-    { paths: "/Artikel", pagename: "Artikel & Berita" },
-    { paths: "/Hubungi", pagename: "Hubungi Kami" },
-  ];
+ 
   const router = useRouter();
   useEffect(() => {
     const handleScroll = () => {
@@ -122,7 +118,7 @@ function Header() {
                         : "text-gray-700 hover:bg-yellow-300 rounded-2xl transition-colors "
                       }`}
                   >
-                  <Link href={"/Hubungi"}>Hubungi Kami</Link>
+                  <Link href={"/Contact"}>Hubungi Kami</Link>
                   </div>
                  
                 </div>
