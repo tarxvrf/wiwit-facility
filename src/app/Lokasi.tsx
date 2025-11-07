@@ -7,7 +7,7 @@ function Lokasi() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Lokasi <span className="text-amber-500">Kami</span>
+              Lokasi <span className="text-orange-600">Kami</span>
             </h2>
             <p className="mt-3 text-gray-600">
               Green Park Office View RD 05, Jalan Daan Mogot Raya KM 14,

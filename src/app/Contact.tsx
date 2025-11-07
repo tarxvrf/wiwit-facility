@@ -91,7 +91,7 @@ function Contact() {
                     href="tel:+622112345678"
                     className="text-blue-600 hover:underline"
                   >
-                    +62 21 1234 5678
+                  +62 813 1436 7878
                   </a>
                   <br />
                   📧{" "}
