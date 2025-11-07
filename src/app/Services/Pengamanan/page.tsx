@@ -114,7 +114,7 @@ function Product() {
               alt="Tentang GB Parking"
               className="rounded-2xl shadow-2xl object-cover w-96 h-96 "
             />
-            
+
             <Image
               width={500}
               height={500}
@@ -145,7 +145,9 @@ function Product() {
                 </div>
                 <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
                   <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
-                    <FaYoutube className="text-5xl" />
+                   <div >
+                      <iframe width="450" height="400" src="https://www.youtube.com/embed/l-fGHzEMsBU?si=AW3sK9a2HjvJ-1iW"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -156,18 +158,15 @@ function Product() {
                 KESELAMATAN <span className="text-orange-600">K3</span>
               </h2>
               <div className="grid lg:grid-cols-2 gap-3">
-                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
-                  <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
+                  <div >
+                      <iframe width="450" height="400" src="https://youtube.com/embed/TGaSI2qr02Q?si=pVQUa2eBJmvYEC0p" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    </div>
+                  
                     <div >
-                            <iframe width="500" height="400" src="https://youtube.com/embed/TGaSI2qr02Q?si=pVQUa2eBJmvYEC0p" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                        </div>
-                  </div>
-                </div>
-                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
-                  <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
-                    <FaYoutube className="text-5xl" />
-                  </div>
-                </div>
+                      <iframe width="450" height="400" src="https://youtube.com/embed/NxgOckLsj-w?si=WlsFTL0hBbjRJXyJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    </div>
+                
+              
               </div>
             </div>
           </div>
