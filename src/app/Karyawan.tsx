@@ -15,7 +15,7 @@ function Partner() {
           </div>
           <div className="max-w-6xl rounded-2xl card shadow-2xl shadow-gray-500">
             <Marquee
-              speed={20}
+              speed={50}
               gradient={false}
               pauseOnHover
               className="py-4 px-3 "
@@ -30,15 +30,7 @@ function Partner() {
                 />
               </div>
 
-              <div className="flex justify-center">
-                <Image
-                  width={500}
-                  height={500}
-                  src="/images/operator.JPG"
-                  alt="Client 2"
-                  className="w-full object-cover border bg-white  shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"
-                />
-              </div>
+             
 
               <div className="flex justify-center">
                 <Image
