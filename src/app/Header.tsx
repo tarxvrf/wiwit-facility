@@ -42,7 +42,7 @@ function Header() {
             ></Image>
           </div>
           <div>
-            <ul className="flex gap-2 sm:gap-3">
+            <ul className="flex gap-1 sm:gap-3">
               <li>
                 <div className="hover:cursor-pointer">
                   <div
