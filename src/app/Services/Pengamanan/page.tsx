@@ -22,7 +22,7 @@ function Product() {
         </div>
         <div className="sm:max-w-8xl sm:px-5 grid gap-12  pt-10 ">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-            Layanan Tenaga <span className="text-amber-600">Pengamanan</span>
+            Layanan Tenaga <span className="text-orange-600">Pengamanan</span>
           </h2>
 
           <div className="grid sm:grid-cols-2 mx-auto sm:p-10 px-3 gap-10 max-w-7xl items-center">
@@ -131,14 +131,6 @@ function Product() {
             <Image
               width={500}
               height={500}
-              src="/images/satpamproyek.jpeg"
-              alt="Tentang GB Parking"
-              className="rounded-2xl shadow-2xl object-cover w-96 h-96 "
-            />
-
-            <Image
-              width={500}
-              height={500}
               src="/images/satpamai14.png"
               alt="Tentang GB Parking"
               className="rounded-2xl shadow-2xl object-cover w-96 h-96"
@@ -160,9 +152,8 @@ function Product() {
               </h2>
               <div className="grid lg:grid-cols-2 mx-auto gap-3 pt-3">
                 <div>
-                  <iframe
-                    width="450"
-                    height="400"
+                  <iframe    
+                    className="w-full sm:w-[400px] sm:h-[500px]"                
                     src="https://www.youtube.com/embed/l-fGHzEMsBU?si=AW3sK9a2HjvJ-1iW"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -180,9 +171,8 @@ function Product() {
               </h2>
               <div className="grid lg:grid-cols-2 gap-3 pt-3">
                 <div>
-                  <iframe
-                    width="450"
-                    height="400"
+                  <iframe    
+                    className="w-full sm:w-[400px] sm:h-[500px]"            
                     src="https://youtube.com/embed/TGaSI2qr02Q?si=pVQUa2eBJmvYEC0p"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -192,14 +182,13 @@ function Product() {
                 </div>
 
                 <div>
-                  <iframe
-                    width="450"
-                    height="400"
+                  <iframe               
                     src="https://youtube.com/embed/NxgOckLsj-w?si=WlsFTL0hBbjRJXyJ"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen
+                    className="w-full sm:w-[400px] sm:h-[500px]"
                   ></iframe>
                 </div>
               </div>
