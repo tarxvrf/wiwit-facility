@@ -11,7 +11,7 @@ function Product() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-10 sm:py-20 lg:py-20 px-3">
+      <section id="about" className="py-20 sm:py-20 lg:py-20 px-3">
         <div className="flex justify-center">
           <Image
             width={2000}
@@ -23,13 +23,13 @@ function Product() {
         </div>
         <div className="max-w-8xl sm:px-5 grid gap-5 px-3 mt-20">
           <div className="grid sm:grid-cols-2 mx-auto sm:p-10 gap-10 max-w-7xl items-center">
-            <div className="">
+            <div className="flex justify-center">
               <Image
                 width={500}
                 height={500}
                 src="/images/tigapriafull.png"
                 alt="Tentang GB Parking"
-                className="rounded-2xl shadow-2xl object-cover w-96 "
+                className="rounded-2xl shadow-2xl object-cover w-64 sm:w-96 "
               />
             </div>
             <div className="flex flex-col gap-3 text-gray-600 text-lg mb-6 text-center">
@@ -42,7 +42,7 @@ function Product() {
                   className="w-60"
                 />
               </div>
-              <div className="flex flex-col gap-3 ">
+              <div className="flex text-2xl flex-col gap-3 ">
                 <p>
                   Tim kami menyediakan tenaga kerja yang handal dan terlatih,
                   dapat membantu Mitra lebih focus pada bisnis utamanyaa dan

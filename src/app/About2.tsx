@@ -18,7 +18,7 @@ function About2() {
             height={1000}
             src="/images/logoberanda.png"
             alt="Tentang Kami"
-            className=" w-[400px] object-cover rounded-2xl shadow-2xl shadow-gray-400"
+            className="w-80 sm:w-[400px] object-cover rounded-2xl shadow-2xl shadow-gray-400"
           />
         </div>
 

@@ -32,7 +32,7 @@ function About() {
         <h2 data-aos="fade-in" data-aos-delay="0" className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
           Layanan <span className="text-orange-600">Kami</span>
         </h2>
-        <p data-aos="fade-up" data-aos-delay="0" className="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+        <p data-aos="fade-up" data-aos-delay="0" className="text-gray-600 text-xl mb-12 max-w-2xl mx-auto">
           <span data-aos="fade-up" data-aos-delay="0" className="text-orange-600 font-bold">GB Facility</span>{" "}
           memberikan Multi-Layanan menjadikan layanan Fasilitas Terpadu dalam
           berbagai layanan bisnis dan industry, yang meliputi antara lain :
@@ -47,14 +47,14 @@ function About() {
             >
               {service.icon}
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-lg leading-relaxed">
                 {service.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="0" className="text-center mt-16 text-md sm:text-lg lg:text-xl font-medium text-gray-700">
+        <div data-aos="fade-up" data-aos-delay="0" className="text-center mt-16 text-xl md:text-2xl font-medium text-gray-700">
           <h2 data-aos="fade-up" data-aos-delay="300">
             Kehadiran{" "}
             <span data-aos="fade-up" data-aos-delay="0" className="text-orange-600 font-semibold">GB Facility </span>

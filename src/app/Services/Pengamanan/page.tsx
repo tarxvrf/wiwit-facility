@@ -1,4 +1,3 @@
-
 import "swiper/css";
 
 import "swiper/css/navigation";
@@ -11,7 +10,7 @@ function Product() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-10 sm:py-20 lg:py-20 px-3">
+      <section id="about" className="grid py-10 sm:py-20 lg:py-20 px-3">
         <div className="flex justify-center">
           <Image
             width={2000}
@@ -21,7 +20,7 @@ function Product() {
             className="rounded-2xl shadow-2xl object-cover w-full hidden sm:block"
           />
         </div>
-        <div className="max-w-8xl sm:px-5 grid gap-12  pt-10 ">
+        <div className="sm:max-w-8xl sm:px-5 grid gap-12  pt-10 ">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
             Layanan Tenaga <span className="text-amber-600">Pengamanan</span>
           </h2>
@@ -33,7 +32,7 @@ function Product() {
                 height={1000}
                 src="/images/homesatpam.jpg"
                 alt="Tentang GB Parking"
-                className="rounded-2xl shadow-2xl object-cover w-full"
+                className="rounded-2xl shadow-2xl object-cover w-96 sm:w-full"
               />
             </div>
             <div className="flex flex-col gap-3 text-gray-600 text-center text-lg">
@@ -59,18 +58,40 @@ function Product() {
 
           <div className="grid sm:grid-cols-2 items-center  text-gray-600  lg:gap-10">
             <div className=" flex-1 justify-end text-lg mb-6 text-justify mx-auto">
-
               <ul>
-                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>1. Pendampingan</span></li>
-                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>2. Gedung Perkantoran</span></li>
-                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>3. Pusat Perbelanjaan dan Ritel</span></li>
-                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>4. Ritel</span></li>
-                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>5. Lembaga Keuangan</span></li>
-                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>6. Lembaga Pendidikan</span></li>
-                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>7. Pabrik</span></li>
-                <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>8. Tempat Wisata dan Tempat Hiburan</span></li>
+                <li className="flex gap-3">
+                  <FaCheckCircle className="text-green-500 rounded-full" />
+                  <span>1. Pendampingan</span>
+                </li>
+                <li className="flex gap-3">
+                  <FaCheckCircle className="text-green-500 rounded-full" />
+                  <span>2. Gedung Perkantoran</span>
+                </li>
+                <li className="flex gap-3">
+                  <FaCheckCircle className="text-green-500 rounded-full" />
+                  <span>3. Pusat Perbelanjaan dan Ritel</span>
+                </li>
+                <li className="flex gap-3">
+                  <FaCheckCircle className="text-green-500 rounded-full" />
+                  <span>4. Ritel</span>
+                </li>
+                <li className="flex gap-3">
+                  <FaCheckCircle className="text-green-500 rounded-full" />
+                  <span>5. Lembaga Keuangan</span>
+                </li>
+                <li className="flex gap-3">
+                  <FaCheckCircle className="text-green-500 rounded-full" />
+                  <span>6. Lembaga Pendidikan</span>
+                </li>
+                <li className="flex gap-3">
+                  <FaCheckCircle className="text-green-500 rounded-full" />
+                  <span>7. Pabrik</span>
+                </li>
+                <li className="flex gap-3">
+                  <FaCheckCircle className="text-green-500 rounded-full" />
+                  <span>8. Tempat Wisata dan Tempat Hiburan</span>
+                </li>
               </ul>
-
             </div>
             <div className="">
               <div className="grid grid-cols-2">
@@ -131,42 +152,56 @@ function Product() {
             />
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-3">
+          <div className="grid sm:grid-cols-2 mx-auto container gap-3">
             <div className="">
-              <h2 className="px-3 text-center text-lg md:text-xl font-bold text-gray-900">
+              <h2 className="px-3 text-lg md:text-xl font-bold text-gray-900">
                 PENJAGAAN SECURITY{" "}
                 <span className="text-orange-600">GEDUNG</span>
               </h2>
-              <div className="grid lg:grid-cols-2 mx-auto gap-3">
-                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
-                  <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
-                    <FaYoutube className="text-5xl" />
-                  </div>
+              <div className="grid lg:grid-cols-2 mx-auto gap-3 pt-3">
+                <div>
+                  <iframe
+                    width="450"
+                    height="400"
+                    src="https://www.youtube.com/embed/l-fGHzEMsBU?si=AW3sK9a2HjvJ-1iW"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
                 </div>
-                <div className="aspect-video bg-gray-800 flex items-center justify-center rounded-xl relative">
-                  <div className="bg-opacity-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-50 transition">
-                   <div >
-                      <iframe width="450" height="400" src="https://www.youtube.com/embed/l-fGHzEMsBU?si=AW3sK9a2HjvJ-1iW"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    </div>
-                  </div>
-                </div>
+                <div></div>
               </div>
             </div>
 
             <div className="">
-              <h2 className="px-3 text-lg md:text-xl font-bold text-center text-gray-900">
+              <h2 className="px-3 text-lg md:text-xl font-bold  text-gray-900">
                 KESELAMATAN <span className="text-orange-600">K3</span>
               </h2>
-              <div className="grid lg:grid-cols-2 gap-3">
-                  <div >
-                      <iframe width="450" height="400" src="https://youtube.com/embed/TGaSI2qr02Q?si=pVQUa2eBJmvYEC0p" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    </div>
-                  
-                    <div >
-                      <iframe width="450" height="400" src="https://youtube.com/embed/NxgOckLsj-w?si=WlsFTL0hBbjRJXyJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    </div>
-                
-              
+              <div className="grid lg:grid-cols-2 gap-3 pt-3">
+                <div>
+                  <iframe
+                    width="450"
+                    height="400"
+                    src="https://youtube.com/embed/TGaSI2qr02Q?si=pVQUa2eBJmvYEC0p"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+
+                <div>
+                  <iframe
+                    width="450"
+                    height="400"
+                    src="https://youtube.com/embed/NxgOckLsj-w?si=WlsFTL0hBbjRJXyJ"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>

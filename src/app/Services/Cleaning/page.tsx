@@ -12,9 +12,9 @@ function Product() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-32 lg:py-48 ">
+      <section id="about" className="py-20 sm:py-32 lg:py-48 px-3">
         <h2 className="text-3xl mb-10 md:text-4xl font-bold text-gray-900 text-center">
-          Layanan <span className="text-amber-600">Tenaga Kebersihan</span> (Cleaning Service)
+          Layanan <span className="text-orange-600">Tenaga Kebersihan</span> (Cleaning Service)
         </h2>
         <div className="max-w-8xl sm:px-5 grid gap-5 px-3">
           <div className="grid sm:grid-cols-2 mx-auto sm:p-10 gap-10 max-w-7xl items-center">
@@ -105,7 +105,7 @@ function Product() {
             ahli, kami menjaga fasilitas Anda tetap prima
           </div>
           <div className="grid mx-auto gap-3 px-3 max-w-8xl text-xl mb-10">
-            <div className="flex sm:flex-col gap-3 px-3">
+            <div className="flex flex-col gap-3 px-3">
               <div className="flex justify-center pb-5 ">
                 <ul>
                  <li className="flex gap-3"><FaCheckCircle className="text-green-500 rounded-full" /><span>Kebersihan Harian & Umum</span></li>
@@ -136,27 +136,11 @@ function Product() {
                   alt="Tentang GB Parking"
                   className="rounded-2xl shadow-2xl bg-cover bg-center w-96 h-96"
                 />
-                 <Image
-                  width={500}
-                  height={500}
-                  src="/images/gardener.png"
-                  alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-2xl bg-cover bg-center w-96 h-96"
-                />
+                 
               </div>
-
-            </div>
-            
+            </div>            
           </div>
-          <div className="grid mx-auto mt-10">
-              <Image
-                width={500}
-                height={500}
-                src="/images/gbcleaning.jpg"
-                alt="Tentang GB Parking"
-                className="rounded-2xl shadow-2xl bg-cover bg-center w-full"
-              />
-            </div>
+         
 
         </div>
       </section>

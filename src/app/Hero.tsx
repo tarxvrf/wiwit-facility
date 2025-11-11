@@ -6,19 +6,19 @@ import Image from "next/image";
 function Hero() {
 
   return (
-    <section className="pt-28 bg-[url('/images/gbherobg.jpg')] h-[800px] not-only-of-type:bg-cover bg-center bg-no-repeat flex items-center justify-center ">
+    <section className="pt-28 bg-[url('/images/gbherobg.jpg')] h-[500px] sm:h-[800px] not-only-of-type:bg-cover bg-center bg-no-repeat flex items-center justify-center ">
       <div className="">
         <div className="container mx-auto px-6 flex flex-col md:grid md:grid-cols-2 items-center justify-between gap-10">
           {/* Kiri: Teks */}
           <div data-aos="fade-up" data-aos-delay="0" className="flex-1 text-center md:text-left ">
-            <h1 className="text-5xl md:text-8xl pt-10 font-bold text-gray-900 mb-4 leading-tight">
-              <span className="text-orange-600">Solusi</span> Bisnis Anda
+            <h1 className="text-4xl md:text-5xl lg:text-6xl pt-10 font-bold text-gray-900 mb-4 leading-tight lg:mb-8">
+              <span className="text-orange-600 lg:text-8xl">Solusi</span> Bisnis Anda
             </h1>
-            <p className="text-4xl text-gray-600 mb-6">
+            <p className="text-xl sm:text-3xl md:text-4xl text-gray-600 mb-6">
               Fokuslah pada apa yang membuat bisnismu unggul serahkan sisanya pada Tim profesional <span className="text-orange-600 font-bold">
               GB Facility.</span>
             </p>
-            <div className="flex justify-center md:justify-start pt-20 gap-4">
+            <div className="flex justify-center md:justify-start pt-10 sm:pt-20 gap-4">
               <button className="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow hover:bg-blue-700 transition">
                 Mulai Sekarang
               </button>
